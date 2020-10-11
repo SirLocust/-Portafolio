@@ -1,4 +1,16 @@
 <app-navbar></app-navbar>
 <main>
-    
+  <section>
+    <div>
+      <h1>
+        {{ title }}
+        <span 
+        [ngClass]="{ 
+          tic: this.title.length === this.textWelcome.length 
+                  }"
+          >|</span
+        >
+      </h1>
+    </div>
+  </section>
 </main>
