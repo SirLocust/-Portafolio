@@ -1,3 +1,4 @@
+import { AboutMeModule } from './about-me/about-me.module';
 import { ShareModule } from './share/share.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -13,6 +14,7 @@ import { AppComponent } from './app.component';
     BrowserModule,
     AppRoutingModule,
     ShareModule,
+    AboutMeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
