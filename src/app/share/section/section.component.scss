@@ -1,0 +1,18 @@
+:host.container{
+    // background-color: red;
+    min-height: 100vh;
+    // height: 100vh;
+    margin:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.contenedor__section{
+    // background-color: darkmagenta;
+    width:90%;
+    min-height: 100%;
+    margin-left: 6.25em;
+    margin-right: 12.5em;
+    
+}
