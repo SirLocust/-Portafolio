@@ -1,0 +1,83 @@
+
+@mixin neonShadow($color1, $color2) {
+   
+    box-shadow: 0 0 0.0432em 0.1725em #fff7f7, 0 0 0.1725em 0.2591em $color2,
+        0 0 1.7275em 0.1725em $color1, inset 0 0 0.6475em 0.1725em $color1,
+        inset 0 0 0.1725em 0.0862em $color2, inset 0 0 0.2156em 0.0862em #fff7f7;
+}
+.l{
+    padding: 1.875em;
+    background-color:rgba(0, 0, 0, .5);
+    // min-width: 500px;
+    // height: 500px;
+    border-radius: 0.125em;
+    animation: into 0.5s ease-in-out ;
+    color :white;
+    @include neonShadow(#0be516,#72e996);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+h1{
+    text-align: center;
+    font-size: 3.125em;
+    color: white;
+    // animation: glow 1s ease-in-out infinite alternate;
+    text-shadow: 0 0 20px #fff, 0 0 30px #0be516, 0 0 40px #0be516, 0 0 50px #0be516, 0 0 60px#0be516, 0 0 70px #0be516, 0 0 80px #0be516;
+    
+}
+.tic{
+    
+    animation: sul 1.2s ease-in infinite;
+    
+}
+@keyframes sul{
+    from{
+        opacity: 0;
+    }
+    to{ opacity: 1;}
+}
+
+@keyframes into{
+    0%{
+        transform: scale(0);
+    }
+    25%{
+        transform: scale(0.25);
+    }
+    50%{
+        transform: scale(0.5);
+    }
+    75%{
+        transform: scale(0.75);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+.s{
+    position: relative;
+    left: -30%;
+    // top: 50%;
+    width: 12.5rem;
+    height: 12.5rem;
+    // // border-radius: 100px;
+    img{
+        width: 100%;
+        border-radius: 60%;
+        @include neonShadow(#0be516,#72e996);
+
+    }
+    // display: block;
+    
+}
+.q{
+    font-size: 1.25rem ;
+    width: 15em;
+    margin-left: -3em;
+    
+}
+
+
