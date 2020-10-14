@@ -1,24 +1,27 @@
 <div #bioSec1>
+  <app-section>
+    <app-bio></app-bio>
 
-    
-    <app-section>
-        <app-bio></app-bio>
-        
-        <app-button-scroll-to  [idToScroll]="bioSec2"></app-button-scroll-to>
-    </app-section>
+    <app-button-scroll-to [idToScroll]="bioSec2"></app-button-scroll-to>
+  </app-section>
 </div>
-<div #bioSec2 >
-    <app-section >
-        <app-cards [boxShadowColor]="'Green'">
-            
-        </app-cards>
-        <app-button-scroll-to  [idToScroll]="bioSec3"></app-button-scroll-to>
-    </app-section>
+<div #bioSec2>
+  <app-section>
+    <app-cards
+      [boxShadowColor]="'Green'"
+      [urlImage1]="
+        'https://cdn.pixabay.com/photo/2013/07/12/12/14/euro-145386_960_720.png'
+      "
+      [urlImage2]="
+      'https://cdn.pixabay.com/photo/2013/07/12/12/14/euro-145386_960_720.png'
+    "
+    >
+    </app-cards>
+    <app-button-scroll-to [idToScroll]="bioSec3"></app-button-scroll-to>
+  </app-section>
 </div>
-<div #bioSec3 >
-    <app-section >
-        <app-cards [boxShadowColor]="'Green'">
-            
-        </app-cards>
-    </app-section>
+<div #bioSec3>
+  <app-section>
+    <app-cards [boxShadowColor]="'Green'"> </app-cards>
+  </app-section>
 </div>

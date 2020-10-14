@@ -10,8 +10,14 @@ export class CardsComponent implements OnInit {
   @Input() boxShadowColor: string = '';
   @Input() encabezadoCard: string = 'hola';
   @Input() textoCard: string = 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta eum est odio necessitatibus voluptatem magni molestiae fugit nisi ratione voluptas impedit laborum modi suscipit repudiandae facere, ex vel. Quisquam, quo.';
+  @Input() urlImage1 : string
+  @Input() urlImage2 : string
+
+  showImg : boolean = false;
   constructor() { }
   ngOnInit(): void {
   }
 
+
+  
 }

@@ -5,6 +5,7 @@ import { NavButtonComponent } from './components/nav-button/nav-button.component
 import { SectionComponent } from './section/section.component';
 import { ButtonScrollToComponent } from './button-scroll-to/button-scroll-to.component';
 import { CardsComponent } from './cards/cards.component';
+import { HoverDDirective } from './cards/directives/hover-d.directive';
 
 @NgModule({
   declarations: [
@@ -13,6 +14,7 @@ import { CardsComponent } from './cards/cards.component';
     SectionComponent,
     ButtonScrollToComponent,
     CardsComponent,
+    HoverDDirective,
   ],
   imports: [CommonModule],
   exports: [

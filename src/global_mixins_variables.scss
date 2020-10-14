@@ -9,7 +9,7 @@ $neonGreenSecondary :#72e996;
 
 
 @mixin neonShadowBox($color1, $color2) {
-    font-size: 20px;
+    // font-size: 20px;
     box-shadow: 0 0 0.0432em 0.1725em #fff7f7, 0 0 0.1725em 0.2591em $color2,
         0 0 1.7275em 0.1725em $color1, inset 0 0 0.6475em 0.1725em $color1,
         inset 0 0 0.1725em 0.0862em $color2, inset 0 0 0.2156em 0.0862em #fff7f7;
