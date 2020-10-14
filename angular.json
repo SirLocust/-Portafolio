@@ -29,6 +29,7 @@
             ],
             "styles": [
               "src/styles.scss",
+              "src/global_mixins_variables.scss",
               "./node_modules/normalize.css/normalize.css"
               
             ],

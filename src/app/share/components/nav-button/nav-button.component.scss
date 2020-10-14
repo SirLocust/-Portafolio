@@ -1,3 +1,6 @@
+@import "../../../../global_mixins_variables.scss";
+
+
 .menu-nav_item {
     display: flex;
     background: black;
@@ -37,37 +40,37 @@
     color: white;
 }
 
-@mixin neonShadow($color1, $color2) {
-    font-size: 20px;
-    box-shadow: 0 0 0.0432em 0.1725em #fff7f7, 0 0 0.1725em 0.2591em $color2,
-        0 0 1.7275em 0.1725em $color1, inset 0 0 0.6475em 0.1725em $color1,
-        inset 0 0 0.1725em 0.0862em $color2, inset 0 0 0.2156em 0.0862em #fff7f7;
-}
+// @mixin neonShadowBox($color1, $color2) {
+//     font-size: 20px;
+//     box-shadow: 0 0 0.0432em 0.1725em #fff7f7, 0 0 0.1725em 0.2591em $color2,
+//         0 0 1.7275em 0.1725em $color1, inset 0 0 0.6475em 0.1725em $color1,
+//         inset 0 0 0.1725em 0.0862em $color2, inset 0 0 0.2156em 0.0862em #fff7f7;
+// }
 
 // color principal #0be516 color segundario #72e996
 .neonGreen {
 
-    @include neonShadow(#0be516, #72e996);
+    @include neonShadowBox($neonGreenPrimary,$neonGreenSecondary);
 
 }
 
 .neonBlue {
-    @include neonShadow(#0f0be5, #727ae9);
+    @include neonShadowBox(#0f0be5, #727ae9);
 }
 
 // color principal #e50b0b color segundario  #e97272
 
 .neonRed {
-    @include neonShadow(#e50b0b, #e97272);
+    @include neonShadowBox(#e50b0b, #e97272);
 
 }
 
 .neonPurple {
-    @include neonShadow(#4c0be5, #8472e9);
+    @include neonShadowBox(#4c0be5, #8472e9);
 
 }
 
 .neonYellow {
-    @include neonShadow(#e5e10b, #e9d372);
+    @include neonShadowBox(#e5e10b, #e9d372);
 
 }

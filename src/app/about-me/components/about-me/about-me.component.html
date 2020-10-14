@@ -1,5 +1,14 @@
-<app-section>
-    <app-bio></app-bio>
-    
-</app-section>
+<div #bioSec1>
 
+    
+    <app-section>
+        <app-bio></app-bio>
+        
+        <app-button-scroll-to  [idToScroll]="bioSec2"></app-button-scroll-to>
+    </app-section>
+</div>
+<div #bioSec2 >
+    <app-section >
+        <h1>Hola Mundo</h1>
+    </app-section>
+</div>
