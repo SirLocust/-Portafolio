@@ -1,0 +1,31 @@
+@import '~/../../../../global_mixins_variables.scss';
+
+:host{  
+    
+//  margin-top: 200px;
+//  position: relative;
+//  width: 300px;
+//  height: 150px;
+//  z-index: 99;
+ display: block;
+//  justify-content: center;
+//  align-items: center;
+//  justify-self: start;
+ text-align: center;
+ margin-top: 2em;
+ 
+}
+.buttonTo{
+    @include neonShadowBox($neonGreenPrimary,$neonGreenSecondary);
+    text-decoration: none;
+    cursor: pointer;
+    // padding: 1px;
+    // border: 2px solid white;
+    border-radius: 50%;
+    color:white;
+    display: flex;
+    
+    span{
+        font-size: 3em;
+    }
+}

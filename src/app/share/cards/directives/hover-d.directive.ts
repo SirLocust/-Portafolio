@@ -8,7 +8,7 @@ export class HoverDDirective {
   @HostListener('pointerenter' , ['$event']) hoverInto(){
     this.isHover.emit(true);
   }
-  @HostListener('pointerout' , ['$event']) hoverOut(){
+  @HostListener('pointerleave' , ['$event']) hoverOut(){
     
     this.isHover.emit(false);
     

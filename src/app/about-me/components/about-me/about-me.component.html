@@ -1,8 +1,8 @@
 <div #bioSec1>
-  <app-section>
+  <app-section [refToScroll]="bioSec2">
     <app-bio></app-bio>
 
-    <app-button-scroll-to [idToScroll]="bioSec2"></app-button-scroll-to>
+    
   </app-section>
 </div>
 <div #bioSec2>
@@ -17,7 +17,7 @@
     "
     >
     </app-cards>
-    <app-button-scroll-to [idToScroll]="bioSec3"></app-button-scroll-to>
+ 
   </app-section>
 </div>
 <div #bioSec3>

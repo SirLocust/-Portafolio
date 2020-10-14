@@ -30,7 +30,8 @@
             "styles": [
               "src/styles.scss",
               "src/global_mixins_variables.scss",
-              "./node_modules/normalize.css/normalize.css"
+              "./node_modules/normalize.css/normalize.css",
+              "./node_modules/material-design-icons/iconfont/material-icons.css"
               
             ],
             "scripts": []
