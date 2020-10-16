@@ -1,3 +1,4 @@
+import { SkillsModule } from './skills/skills.module';
 import { AboutMeModule } from './about-me/about-me.module';
 import { ShareModule } from './share/share.module';
 import { BrowserModule } from '@angular/platform-browser';
@@ -14,7 +15,8 @@ import { AppComponent } from './app.component';
     BrowserModule,
     AppRoutingModule,
     ShareModule,
-    AboutMeModule
+    AboutMeModule,
+    SkillsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
