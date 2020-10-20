@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { SkillsComponent } from './components/skills/skills.component';
 import { SkillsNavBarComponent } from './components/skills-nav-bar/skills-nav-bar.component';
 import { ContainerskillComponent } from './components/containerskill/containerskill.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 
 
@@ -12,6 +13,7 @@ import { ContainerskillComponent } from './components/containerskill/containersk
   imports: [
     CommonModule,
     SkillsRoutingModule,
+    FontAwesomeModule
   ]
 })
 export class SkillsModule{}
