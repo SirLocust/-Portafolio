@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FaIconLibrary } from '@fortawesome/angular-fontawesome';
-import { faAngular , faJs, faJava, faHtml5, faCss3} from '@fortawesome/free-brands-svg-icons';
+import { faAngular , faJs, faJava, faHtml5, faCss3 ,faGit} from '@fortawesome/free-brands-svg-icons';
+
 @Component({
   selector: 'app-skills-nav-bar',
   templateUrl: './skills-nav-bar.component.html',
@@ -14,7 +15,8 @@ export class SkillsNavBarComponent implements OnInit {
         faJs,
         faJava,
         faHtml5,
-        faCss3
+        faCss3,
+        faGit
       );
    }
 
