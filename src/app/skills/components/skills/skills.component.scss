@@ -7,10 +7,15 @@
     align-items: center;
 }
 
-div{
+.skills_container_principal{
     // display: inline;
     text-align: center;
     width: 80%;
     min-height: 93vh;
     // background-color: blue;
+}
+
+.right_text{
+    background-color: rgba( #F7DF1E, 0.9);
+    border-radius: 10px;
 }

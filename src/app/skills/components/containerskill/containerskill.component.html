@@ -1,13 +1,13 @@
-<div class="skills_information skills_information_size40">
+<div *ngIf="isOnLogo" class="skills_information skills_information_size40">
     <ng-content select=".left_text"></ng-content>
 </div>
 <div class="skills_information skills_information_size20">
   
-    ><img class="skills_Logo skills_Logo_desactive"
-      src="../../../../assets/javascript-39404.png"
+    <img class="skills_Logo" (click)="toggleIsOnLogo()" [ngClass]="{skills_Logo_desactive : !isOnLogo }"  
+      [src]="this.logoUrl"
       alt=""
   />
 </div>
-<div class="skills_information skills_information_size40">
-    <ng-content select=".right_text"></ng-content>
+<div *ngIf="isOnLogo"  class="skills_information skills_information_size40">
+    <ng-content  select=".right_text"></ng-content>
 </div>
