@@ -1,13 +1,31 @@
 <div *ngIf="isOnLogo" class="skills_information skills_information_size40">
-    <ng-content select=".left_text"></ng-content>
+  <!-- <ng-content select=".left_text"></ng-content> -->
+  <div>
+    <div
+      class="flex-center"
+      [ngStyle]="{
+        'background-color': 'rgba(' + backgroundColorInfos + ',0.9)'
+      }"
+      *ngFor="let skills of this.skillsInfoLeft"
+    >
+      <h1>{{ skills.title }}</h1>
+      <p>{{ skills.info }}</p>
+    </div>
+  </div>
 </div>
 <div class="skills_information skills_information_size20">
-  
-    <img class="skills_Logo" (click)="toggleIsOnLogo()" [ngClass]="{skills_Logo_desactive : !isOnLogo }"  
-      [src]="this.logoUrl"
-      alt=""
+  <img
+    class="skills_Logo"
+    (click)="toggleIsOnLogo()"
+    [ngClass]="{ skills_Logo_desactive: !isOnLogo }"
+    [src]="this.logoUrl"
+    alt=""
   />
 </div>
-<div *ngIf="isOnLogo"  class="skills_information skills_information_size40">
-    <ng-content  select=".right_text"></ng-content>
+<div *ngIf="isOnLogo" class="skills_information skills_information_size40">
+  <!-- <ng-content  select=".right_text"></ng-content> -->
+  <div class="flex-center" *ngFor="let skills of this.skillsInfoRigth">
+    <h1>{{ skills.title }}</h1>
+    <p>{{ skills.info }}</p>
+  </div>
 </div>
