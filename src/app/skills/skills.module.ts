@@ -6,11 +6,12 @@ import { SkillsNavBarComponent } from './components/skills-nav-bar/skills-nav-ba
 import { ContainerskillComponent } from './components/containerskill/containerskill.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { JavaScriptComponent } from './components/java-script/java-script.component';
+import { AngularComponent } from './components/angular/angular.component';
 
 
 
 @NgModule({
-  declarations: [SkillsComponent, SkillsNavBarComponent, ContainerskillComponent, JavaScriptComponent],
+  declarations: [SkillsComponent, SkillsNavBarComponent, ContainerskillComponent, JavaScriptComponent, AngularComponent],
   imports: [
     CommonModule,
     SkillsRoutingModule,
