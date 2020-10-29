@@ -8,10 +8,16 @@
     height: 100vh;
     z-index: 10;
     background-color: rgba(0, 0, 0, 0.9);
+    transition: all 400ms ease ;
+    
     
 }
 .modal_card{
-    width: 50%;
-    height: 600px;
+    width: 60%;
+    height: 330px;
     background-color: white;
+}
+.modal_card_paragraph{
+    padding: 10px;
+    font-size: 10px;
 }

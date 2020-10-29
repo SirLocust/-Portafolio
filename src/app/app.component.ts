@@ -23,13 +23,22 @@ export class AppComponent implements OnInit {
     screen.orientation.lock('landscape-primary');
   }
   isLandScape(): void {
-    // console.log('s');
-    this.texto = window.screen.orientation.type;
-    console.log(window.screen.orientation.type);
-    if (window.screen.orientation.type !== 'landscape-primary') {
+    // this.texto = window.screen.orientation.type;
+    const screenOrientation: string = window.screen.orientation.type;
+
+    const isLandScapeAnyType: boolean =
+          screenOrientation === 'landscape-primary'
+        ? true
+        : screenOrientation === 'landscape'
+        ? true
+        : screenOrientation === 'landscape-secondary'
+        ? true
+        : false;
+
+    if (!isLandScapeAnyType) {
       this.isLandscape = false;
     }
-    if (window.screen.orientation.type === 'landscape-primary') {
+    if (isLandScapeAnyType) {
       this.isLandscape = true;
     }
   }

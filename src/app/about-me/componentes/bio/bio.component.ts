@@ -26,7 +26,7 @@ export class BioComponent implements OnInit {
         setTimeout(()=>{
 
           this.bioVisible = true;
-        },1000);
+        }, 1000);
       }
     }, 100);
   }

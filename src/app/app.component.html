@@ -1,8 +1,8 @@
 
 <!-- <button *ngIf="!this.isLandscape" (click)="change()">{{this.texto}}</button> -->
 <div class="modal flex_center" *ngIf="!this.isLandscape" >
-    <div class="modal_card">
-
+    <div class="modal_card flex_center">
+        <p class="modal_card_paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis repellendus praesentium, cupiditate reiciendis qui voluptas, suscipit autem accusantium omnis amet voluptatem, magnam fugiat ducimus rerum esse cum minima explicabo natus?</p>
     </div>
 
 </div>
@@ -10,7 +10,7 @@
 <app-navbar></app-navbar>
 
 
-<router-outlet></router-outlet>
+<router-outlet *ngIf="this.isLandscape"></router-outlet>
 
 
 

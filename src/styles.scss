@@ -8,7 +8,7 @@ url(
 ;
 
 body {
-    background: $urlBackGround;
+    background: $urlBackGround no-repeat center center;
     background-size: cover;
     background-repeat: repeat;
     background-attachment: fixed;
@@ -31,4 +31,11 @@ body {
     text-align: center;
     width: 80%;
     min-height: 93vh;
+}
+
+@media screen and (max-width: 1000px ) and (orientation : landscape){
+    body{
+        font-size: 9px;
+        background-attachment: initial;
+    }
 }
