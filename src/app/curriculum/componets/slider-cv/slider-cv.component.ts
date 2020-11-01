@@ -8,9 +8,11 @@ import { trigger, state, style, transition, animate} from '@angular/animations'
   animations:[
     trigger('toggleViewCv', [
       state('off', style({
+        
         width : '0'
       })),
       state('on', style({
+        
         width: '62.5em'
       })),
       transition('off => on', animate('700ms ease-in-out')),

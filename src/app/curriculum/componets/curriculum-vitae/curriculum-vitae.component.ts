@@ -24,6 +24,9 @@ export class CurriculumVitaeComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    console.log(screen.width)
+    console.log(screen.height)
+
   }
 
   toggleCv(): void {
