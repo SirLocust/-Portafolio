@@ -4,7 +4,7 @@
             junior java Backend
         </p>
     </div>
-    <div class="cvSlider_cv" *ngIf="this.isViewCv">
+    <div class="cvSlider_cv" [@toggleViewCv]="this.animationViewCv"  >
         <img class="cvSlider_cv_image" src="../../../../assets/CV Frontend Junior.jpg" alt="">
     </div>    
 </div>
@@ -18,6 +18,6 @@
         </p>
     </div>
     <div class="cvSlider_cv" *ngIf="this.isViewCv1">
-        <img src="../../../../assets/CV Frontend Junior.jpg" alt="">
+        <img class="cvSlider_cv_image" src="../../../../assets/CV Frontend Junior.jpg" alt="">
     </div>    
 </div>
