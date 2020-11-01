@@ -1,3 +1,4 @@
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SkillsModule } from './skills/skills.module';
 import { AboutMeModule } from './about-me/about-me.module';
 import { ShareModule } from './share/share.module';
@@ -18,7 +19,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     ShareModule,
     AboutMeModule,
     SkillsModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

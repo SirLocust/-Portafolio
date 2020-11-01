@@ -33,9 +33,23 @@ body {
     min-height: 93vh;
 }
 
-@media screen and (max-width: 1000px ) and (orientation : landscape){
+@media screen and  (min-width: 701px ) and (max-width: 1300px ) and (orientation : landscape){
     body{
-        font-size: 9px;
+        font-size: 12px;
+        background-attachment: initial;
+    }
+}
+
+@media screen and  (min-width: 401px ) and (max-width: 700px ) and (orientation : landscape){
+
+    body{
+        font-size: 7px;
+        background-attachment: initial;
+    }
+}
+@media screen and (max-width: 400px ) and (orientation : landscape){
+    body{
+        font-size: 3px;
         background-attachment: initial;
     }
 }
