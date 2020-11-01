@@ -1,4 +1,24 @@
-<div class="cvSlider flex_center">
+<app-slider-cv
+  [animationViewCv]="isViewCvAnimationList[0].isViewCvAnimation"
+  [viewCvElementPos]="0"
+  [animationViewCvList]='this.isViewCvAnimationList'
+  (animationViewCvEmitter)="this.isViewCvAnimationList = $event"
+></app-slider-cv>
+<app-slider-cv
+  [animationViewCv]="isViewCvAnimationList[1].isViewCvAnimation"
+  [animationViewCvList]='this.isViewCvAnimationList'
+  [viewCvElementPos]="1"
+></app-slider-cv>
+
+<app-slider-cv
+  [animationViewCv]="isViewCvAnimationList[2].isViewCvAnimation"
+  [animationViewCvList]='this.isViewCvAnimationList'
+  [viewCvElementPos]="2"
+></app-slider-cv>
+
+<button (click)="toggleCv()">ssss</button>
+
+<!-- <div class="cvSlider flex_center">
     <div class="cvSlider_tap flex_center " (click)="this.toggleCv()" >
         <p>
             junior java Backend
@@ -20,4 +40,4 @@
     <div class="cvSlider_cv" *ngIf="this.isViewCv1">
         <img class="cvSlider_cv_image" src="../../../../assets/CV Frontend Junior.jpg" alt="">
     </div>    
-</div>
+</div> -->
