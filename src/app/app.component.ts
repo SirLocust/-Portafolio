@@ -8,10 +8,10 @@ import { Component, ElementRef, OnInit, Renderer2 } from '@angular/core';
 })
 export class AppComponent implements OnInit {
   isLandscape = false;
-  gitHubRepos = []
+  gitHubRepos = [];
 
   constructor(private render2: Renderer2,
-              private gitService:GitServiceService
+              private gitService: GitServiceService
               ) {}
 
   ngOnInit(): void {
@@ -20,11 +20,9 @@ export class AppComponent implements OnInit {
       this.isLandScape();
     });
 
-    this.gitService.getAllRespositories().subscribe( data => {
-      let a = document.createElement('div')
-      a.innerHTML = data;
-      document.body.appendChild(a)
-    })
+    this.gitService.getEventsUser().subscribe((data) => {
+      console.table(data);
+    });
   }
   // change() {
   //   console.log('s');
