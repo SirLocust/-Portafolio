@@ -1,3 +1,4 @@
+import { GitServiceService } from './core/git-service.service';
 import { Component, ElementRef, OnInit, Renderer2 } from '@angular/core';
 
 @Component({
@@ -7,23 +8,29 @@ import { Component, ElementRef, OnInit, Renderer2 } from '@angular/core';
 })
 export class AppComponent implements OnInit {
   isLandscape = false;
-  texto = 's';
+  gitHubRepos = [];
 
-  constructor(private render2: Renderer2) {}
+  constructor(private render2: Renderer2,
+              private gitService: GitServiceService
+              ) {}
 
   ngOnInit(): void {
     this.isLandScape();
     this.render2.listen('window', 'orientationchange', (event) => {
       this.isLandScape();
     });
+
+    this.gitService.getEventsUser().subscribe((data) => {
+      console.table(data);
+    });
   }
-  change() {
-    console.log('s');
-    document.documentElement.requestFullscreen();
-    screen.orientation.lock('landscape-primary');
-  }
+  // change() {
+  //   console.log('s');
+  //   document.documentElement.requestFullscreen();
+  //   screen.orientation.lock('landscape-primary');
+  // }
   isLandScape(): void {
-    // this.texto = window.screen.orientation.type;
+    
     const screenOrientation: string = window.screen.orientation.type;
 
     const isLandScapeAnyType: boolean =
