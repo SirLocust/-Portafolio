@@ -21,7 +21,9 @@ export class AppComponent implements OnInit {
     });
 
     this.gitService.getAllRespositories().subscribe( data => {
-      console.log(data[0])
+      let a = document.createElement('div')
+      a.innerHTML = data;
+      document.body.appendChild(a)
     })
   }
   // change() {
