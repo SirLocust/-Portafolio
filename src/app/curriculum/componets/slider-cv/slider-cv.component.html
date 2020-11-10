@@ -1,7 +1,7 @@
 <div class="cvSlider flex_center">
     <div class="cvSlider_tap flex_center " (click)="this.toggleCv()" >
         <p>
-            junior java Backend {{this.viewCvElementPos}}
+            {{ this.nameCv | uppercase  }} 
         </p>
     </div>
     <div class="cvSlider_cv" [@toggleViewCv]="this.animationViewCv"  >
