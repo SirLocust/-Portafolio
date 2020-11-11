@@ -1,4 +1,4 @@
-$widthTapViewCvDesktop : 62.5em ;
+$widthTapViewCvDesktop : 80.5em ;
 
 
 .cvSlider{
@@ -11,13 +11,16 @@ $widthTapViewCvDesktop : 62.5em ;
 .cvSlider_tap{
     width: 1.875em;
     height: 90vh;
-    background-color: rgba(0, 0, 0, 0.692);
+    background-color: rgba(0, 0, 0, 0.8);
+    border-right: 2px solid red;
     cursor: pointer;
     p{
-        text-orientation: upright;
-        color: white;
-        writing-mode: vertical-lr;
         
+        font-weight: 400;
+        font-size: 1em;
+        
+        color: white;
+        writing-mode: vertical-rl;
     }
 }
 
@@ -27,7 +30,7 @@ $widthTapViewCvDesktop : 62.5em ;
     overflow-y: scroll;
     overflow-x: hidden;
     transform-origin: left;
-    scrollbar-color: rebeccapurple green;
+    scrollbar-color: rgb(21, 21, 21) rgb(204, 216, 204);
     scrollbar-width: thin;
     // transform: scaleX(0);
     
@@ -36,12 +39,12 @@ $widthTapViewCvDesktop : 62.5em ;
 }
 
 .cvSlider_cv::-webkit-scrollbar{
-    background-color: yellow;
+    background-color:rgb(204, 216, 204);
     width: 0.3125em;
     
 }
 .cvSlider_cv::-webkit-scrollbar-thumb{
-    background-color: blue;
+    background-color:rgb(21, 21, 21);
     width: 0.3125em;
     
 }
@@ -73,22 +76,22 @@ $widthTapViewCvDesktop : 62.5em ;
 
 
 
-// @media screen and (min-width: 1061px ) and (max-width: 1360px ) and (orientation : landscape){
-//     .cvSlider{
-//        font-size: 0.75em;
+@media screen and (min-width: 1061px ) and (max-width: 1360px ) and (orientation : landscape){
+    .cvSlider{
+       font-size: 0.75em;
     
-//     }   
-// }
-// @media screen and (min-width: 700px ) and (max-width: 1060px ) and (orientation : landscape){
-//     .cvSlider{
-//        font-size: 0.6em;
+    }   
+}
+@media screen and (min-width: 701px ) and (max-width: 1060px ) and (orientation : landscape){
+    .cvSlider{
+       font-size: 0.5em;
     
-//     }   
-// }
+    }   
+}
 
-// @media screen and (max-width: 700px ) and (orientation : landscape){
-//     .cvSlider{
-//        font-size: 0.3125em;
+@media screen and (max-width: 700px ) and (orientation : landscape){
+    .cvSlider{
+       font-size: 0.7em;
     
-//     }   
-// } 
+    }   
+} 
