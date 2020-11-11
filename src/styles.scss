@@ -3,10 +3,10 @@
 $urlBackGround :
 url(
 
-    "https://cdn.pixabay.com/photo/2016/03/09/09/42/buildings-1245953_960_720.jpg"
-    )
+    
+    'https://cdn.pixabay.com/photo/2019/10/18/13/08/rain-4559068_960_720.jpg'    )
 ;
-
+// "https://cdn.pixabay.com/photo/2016/03/09/09/42/buildings-1245953_960_720.jpg"
 body {
     background: $urlBackGround no-repeat center center;
     background-size: cover;
