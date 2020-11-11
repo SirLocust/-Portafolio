@@ -1,3 +1,10 @@
-<li class="menu-nav_item" [ngClass]="'neon' + colorBoxShadow">
-  <a class="menu-nav_item_anchor" href=""> {{ textoAnchor }} </a>
+<li
+  class="menu-nav_item"
+  [routerLink]="[this.target]"
+  [ngClass]="'neon' + colorBoxShadow"
+>
+  <ng-content></ng-content>
+  <a class="menu-nav_item_anchor">
+    {{ textoAnchor }}
+  </a>
 </li>

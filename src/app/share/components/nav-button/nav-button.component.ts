@@ -8,6 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
 export class NavButtonComponent implements OnInit {
   @Input() textoAnchor = '';
   @Input() colorBoxShadow = 'red';
+  @Input() target = '/';
   constructor() { }
 
   ngOnInit(): void {

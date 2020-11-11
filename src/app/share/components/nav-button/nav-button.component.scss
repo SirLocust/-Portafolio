@@ -2,23 +2,24 @@
 
 
 .menu-nav_item {
+    
     display: flex;
     background: black;
     justify-content: center;
     align-items: center;
-    text-align: left;
-    right: 5em;
+    text-align: center;
+    right: 6em;
     position: relative;
-    /*   padding: 3px; */
-    width: 6.8em;
-    height: 2em;
+    //  padding: 3px; 
+    width: 7.8em;
+    height: 2.5em;
     border-radius: 0.2em;
-
+    cursor: pointer;
 }
 
-.menu-nav_item:hover {
-    animation: rol 1s ease-in-out;
-}
+// .menu-nav_item:hover {
+//     animation: rol .2s ease-in;
+// }
 
 @keyframes rol {
     0% {
@@ -36,9 +37,11 @@
 }
 
 .menu-nav_item_anchor {
+    margin-left: 0.625em;
     text-decoration: none;
     color: white;
 }
+
 
 // @mixin neonShadowBox($color1, $color2) {
 //     font-size: 20px;

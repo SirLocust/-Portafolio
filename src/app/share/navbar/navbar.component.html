@@ -1,12 +1,35 @@
 <header>
-    <nav>
-        <ul class="menu-nav">
-            <app-nav-button [textoAnchor]="'Quien Soy'" [colorBoxShadow]="'Yellow'"></app-nav-button>
-            <app-nav-button [textoAnchor]="'Skills'" [colorBoxShadow]="'Blue'"></app-nav-button>
-            <app-nav-button [textoAnchor]="'Portafolio'" [colorBoxShadow]="'Red'"></app-nav-button>
-            <app-nav-button [textoAnchor]="'Mas'" [colorBoxShadow]="'Green'"></app-nav-button>
+  <nav>
+    <ul class="menu-nav">
+      <app-nav-button
+        [target]="'/'"
+        [textoAnchor]="'Quien Soy'"
+        [colorBoxShadow]="'Green'"
+      >
+        <fa-icon [icon]="['fas', 'male']"></fa-icon>
+      </app-nav-button>
 
-            
-        </ul>
-    </nav>
+      <app-nav-button
+        [target]="'/skills'"
+        [textoAnchor]="'Skills'"
+        [colorBoxShadow]="'Green'"
+      >
+        <fa-icon [icon]="['fas', 'tools']"></fa-icon>
+      </app-nav-button>
+      <app-nav-button
+        [target]="'/portafolio'"
+        [textoAnchor]="'Portafolio'"
+        [colorBoxShadow]="'Green'"
+      >
+        <fa-icon [icon]="['fas', 'briefcase']"></fa-icon>
+      </app-nav-button>
+      <app-nav-button
+        [target]="'/cv'"
+        [textoAnchor]="'Cv'"
+        [colorBoxShadow]="'Green'"
+      >
+        <fa-icon [icon]="['fas', 'scroll']"></fa-icon>
+      </app-nav-button>
+    </ul>
+  </nav>
 </header>
