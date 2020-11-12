@@ -17,9 +17,10 @@
     cursor: pointer;
 }
 
-// .menu-nav_item:hover {
-//     animation: rol .2s ease-in;
-// }
+.menu-nav_item:hover {
+    @include neonShadowBox(#c0bfdf, #ebebeb);
+    // animation: rol .2s ease-in;
+}
 
 @keyframes rol {
     0% {
