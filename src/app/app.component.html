@@ -1,17 +1,17 @@
-
 <!-- <button *ngIf="!this.isLandscape" (click)="change()">{{this.texto}}</button> -->
-<div class="modal flex_center" *ngIf="!this.isLandscape" >
-    <div class="modal_card flex_center">
-        <p class="modal_card_paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis repellendus praesentium, cupiditate reiciendis qui voluptas, suscipit autem accusantium omnis amet voluptatem, magnam fugiat ducimus rerum esse cum minima explicabo natus?</p>
-    </div>
-
+<div class="modal flex_center" *ngIf="!this.isLandscape">
+  <div class="modal_card flex_center">
+    <p class="modal_card_paragraph">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis repellendus
+      praesentium, cupiditate reiciendis qui voluptas, suscipit autem
+      accusantium omnis amet voluptatem, magnam fugiat ducimus rerum esse cum
+      minima explicabo natus?
+    </p>
+  </div>
 </div>
 
 <app-navbar></app-navbar>
 
-
-<router-outlet *ngIf="this.isLandscape"></router-outlet>
-
-
-
-
+<div class="container_efect">
+  <router-outlet *ngIf="this.isLandscape"></router-outlet>
+</div>
