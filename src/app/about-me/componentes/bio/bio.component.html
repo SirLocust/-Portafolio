@@ -1,28 +1,30 @@
 <ng-container *ngIf="!this.bioVisible">
-    <h1 class="writerText">
-        {{ title }}
-        <span
-          [ngClass]="{
-            writer_flicker: this.title.length === this.textWelcome.length
-          }"
-          >|</span
-        >
-      </h1>
+  <h1 class="writerText">
+    {{ title }}
+    <span
+      [ngClass]="{
+        writer_flicker: this.title.length === this.textWelcome.length
+      }"
+      >|</span
+    >
+  </h1>
 </ng-container>
-
 
 <div class="cardImg" *ngIf="this.bioVisible">
   <div class="cardImg_picture">
-    
-    <img src="../../../../assets/imgProfile.jpg" alt="">
+    <img src="../../../../assets/imgProfile.jpg" alt="" />
   </div>
   <div class="cardImg_article">
-
-    <h1>Un Poco Sobre Mi</h1>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores quasi inventore corrupti. Ut sequi . Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse deleniti explicabo omnis optio ratione rerum tenetur provident voluptas beatae consectetur autem iure ullam enim veniam, quo soluta deserunt obcaecati. Enim?
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum aperiam fugit eligendi tempora nemo ratione, magnam minus minima facilis praesentium, a quaerat. Cum eaque aspernatur atque, nam architecto ipsam voluptatum.
+    <!-- <h1>Un Poco Sobre Mi</h1> -->
+    <p>
+      Junior Frontend developer en angular con 1 año de experiencia como
+      freelance apasionado por angular y las aplicaciones web buscando una
+      empresa para desarrollar mis habilidades en el mundo del frontend y
+      aportar a esta mi conocimiento
     </p>
   </div>
 </div>
-
-
+<div class="titleHolder" *ngIf="this.bioVisible">
+  <h1>JUNIOR</h1>
+  <h1>DEVELOPER</h1>
+</div>

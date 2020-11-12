@@ -1,10 +1,17 @@
 @import '../../../global_mixins_variables.scss';
+:host{
+    height: 80vh;
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .cardsInfo{
     font-size: 1em;
     padding: 1.25em;
     display: flex;
-    max-width: 25em;
+    max-width: 30em;
     height: 25em;
     padding: 1.25em;
     background-color: rgba(0, 0, 0, 0.7);
@@ -16,16 +23,17 @@
     h1{
         // font-size: 1em;
         text-align: center;    
-        @include textShadow($neonGreenPrimary)
+        // @include textShadow($neonGreenPrimary)
     }
     p{
-        // font-size: 0.4em;
+        font-size: 1em;
         text-align: justify;
     }
 }
-.boxShadowGreen{
+.boxShadowWhite{
 
-    @include neonShadowBox($neonGreenPrimary,$neonGreenSecondary);
+    @include neonShadowBox(#c0bfdf, #ebebeb);
+
 }
 
 .rightImg{
