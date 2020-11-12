@@ -1,16 +1,37 @@
 @import './../../../../global_mixins_variables.scss';
 
+:host{
+    height: 80vh;
+    width: 90vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.titleHolder{
+    
+    color:white;
+    font-size: 2.0em;
+    h1{
+        margin: 0;
+    }
+}
+
+
 .cardImg{
     // padding: 60px;
 
-    padding: 1.875em;
+    padding: 1em;
     background-color:rgba(0, 0, 0, .8);
-    min-width: 27em;
-    height: 23em;
+    min-width: 20em;
+    max-height: 23em;
     border-radius: 0.125em;
     animation: into 0.5s ease-in-out ;
     color :white;
-    @include neonShadowBox(#0be516,#72e996);
+    // border: 1px solid white;
+    @include neonShadowBox(#c0bfdf, #ebebeb);
+    // @include neonShadowBox(#0be516,#72e996);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,7 +43,7 @@
     color: white;
     transition: all 100ms ease;
     // animation: glow 1s ease-in-out infinite alternate;
-    @include textShadow($neonGreenPrimary);
+    // @include textShadow($neonGreenPrimary);
     
 }
 
@@ -58,15 +79,16 @@
 
 .cardImg_picture{
     position: relative;
-    left: -30%;
-    // top: 50%;
+    left: -25%;
+    top: 5%;
     width: 12.5em;
     height: 12.5em;
     // // border-radius: 100px;
     img{
-        width: 100%;
+        width: 90%;
         border-radius: 60%;
-        @include neonShadowBox(#0be516,#72e996);
+        // @include neonShadowBox(#0be516,#72e996);
+        @include neonShadowBox(#c0bfdf, #ebebeb);
 
     }
     // display: block;
@@ -74,14 +96,14 @@
 }
 .cardImg_article{
 
-    padding: 0.625em;
+    // padding: 0.625em;
 
     font-size: 1em ;
-    width: 17em;
+    max-width:  20em;
 
     
-    margin-left: -5em;
-    margin-right: 1em;
+    margin-left: -6em;
+    margin-right: 2em;
     h1{
         // font-size: 1.5em;
         @include textShadow($neonGreenPrimary);
@@ -89,7 +111,7 @@
         text-align: center;
     }
     p{
-        // font-size: 1em;
+        font-size: 1.5em;
         text-align: justify;
     }
     
