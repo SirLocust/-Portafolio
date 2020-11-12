@@ -1,4 +1,4 @@
-import { Component, HostBinding, Input, OnInit } from '@angular/core';
+import { Component, HostBinding, Input, OnInit, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-section',
@@ -8,7 +8,7 @@ import { Component, HostBinding, Input, OnInit } from '@angular/core';
 })
 export class SectionComponent implements OnInit {
   @HostBinding('class') containerClass = 'container';
-  @Input() refToScroll: HTMLElement;
+  @Input() refToScroll: ElementRef;
   constructor() { }
 
   ngOnInit(): void {

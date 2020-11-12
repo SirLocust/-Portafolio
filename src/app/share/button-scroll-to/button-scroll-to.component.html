@@ -1,5 +1,3 @@
-
-
-<a class="buttonTo" (click)="this.goTo()"><span class="material-icons md-36">
-    keyboard_arrow_down
-    </span></a>
+<a *ngIf="this.idToScroll" class="buttonTo" (click)="this.goTo()">
+  <fa-icon [icon]="this.faLongArrowAltDown" size="3x"></fa-icon>
+</a>
