@@ -1,3 +1,4 @@
+import { RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -6,7 +7,7 @@ import { SectionComponent } from './section/section.component';
 import { ButtonScrollToComponent } from './button-scroll-to/button-scroll-to.component';
 import { CardsComponent } from './cards/cards.component';
 import { HoverDDirective } from './cards/directives/hover-d.directive';
-
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 @NgModule({
   declarations: [
     NavbarComponent,
@@ -16,7 +17,7 @@ import { HoverDDirective } from './cards/directives/hover-d.directive';
     CardsComponent,
     HoverDDirective,
   ],
-  imports: [CommonModule],
+  imports: [CommonModule, FontAwesomeModule, RouterModule],
   exports: [
     NavbarComponent,
     NavButtonComponent,

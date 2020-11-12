@@ -20,9 +20,7 @@ export class AppComponent implements OnInit {
       this.isLandScape();
     });
 
-    this.gitService.getEventsUser().subscribe((data) => {
-      console.table(data);
-    });
+
   }
   // change() {
   //   console.log('s');
