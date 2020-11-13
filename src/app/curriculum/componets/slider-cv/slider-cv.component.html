@@ -1,10 +1,14 @@
 <div class="cvSlider flex_center">
-    <div class="cvSlider_tap flex_center " (click)="this.toggleCv()" >
-        <p>
-            {{ this.nameCv | uppercase  }} 
-        </p>
-    </div>
-    <div class="cvSlider_cv" [@toggleViewCv]="this.animationViewCv"  >
-        <img class="cvSlider_cv_image" src="../../../../assets/CV Frontend Junior.jpg" alt="">
-    </div>    
+  <div class="cvSlider_tap flex_center" (click)="this.toggleCv()">
+    <p>
+      {{ this.nameCv | uppercase }}
+    </p>
+  </div>
+  <div class="cvSlider_cv" [@toggleViewCv]="this.animationViewCv">
+    <img
+      class="cvSlider_cv_image"
+      src="../../../../assets/CV Frontend Junior.jpg"
+      alt=""
+    />
+  </div>
 </div>

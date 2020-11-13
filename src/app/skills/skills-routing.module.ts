@@ -7,7 +7,9 @@ import { Routes, RouterModule } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
+    // redirectTo:'/skills/javascript',
     component: SkillsComponent,
+   
     children: [
       {
         path: 'javascript',
@@ -18,10 +20,13 @@ const routes: Routes = [
         path: 'angular',
         component: AngularComponent,
       },
-      { path: '**', redirectTo: 'javascript' },
+      { path: '**', redirectTo: '/skills/javascript' , pathMatch:'full' },
     ],
+
   },
-  { path: '**', redirectTo: '', pathMatch: 'full' },
+  { path: '**', pathMatch: 'full', redirectTo: '' },
+
+  
 ];
 
 @NgModule({

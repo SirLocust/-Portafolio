@@ -8,17 +8,27 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    right: 6em;
+    right: 5em;
     position: relative;
     //  padding: 3px; 
-    width: 7.8em;
-    height: 2.5em;
+    width: 7.0em;
+    height: 2.0em;
     border-radius: 0.2em;
     cursor: pointer;
 }
 
 .menu-nav_item:hover {
-    @include neonShadowBox(#c0bfdf, #ebebeb);
+    transform: scale(1.2);
+    right: 6em;
+    @include neonShadowBox(#0be1e5, #72e9d7);
+    // animation: rol .2s ease-in;
+}
+.menu-nav_item_active {
+    // @include neonShadowBox(#0be1e5, #72e9d7) ;
+    box-shadow: 0 0 0.0432em 0.1725em #fff7f7, 0 0 0.1725em 0.2591em #72e9d7,
+        0 0 1.7275em 0.1725em #0be1e5, inset 0 0 0.6475em 0.1725em #0be1e5,
+        inset 0 0 0.1725em 0.0862em #72e9d7, inset 0 0 0.2156em 0.0862em #fff7f7 !important;
+    
     // animation: rol .2s ease-in;
 }
 
@@ -38,7 +48,8 @@
 }
 
 .menu-nav_item_anchor {
-    margin-left: 0.625em;
+    font-size: 0.9em;
+    margin-left: 0.3em;
     text-decoration: none;
     color: white;
 }
@@ -61,6 +72,12 @@
 .neonBlue {
     @include neonShadowBox(#0f0be5, #727ae9);
 }
+
+.neonWhite {
+    @include neonShadowBox(#c0bfdf, #ebebeb);
+    
+}
+
 
 // color principal #e50b0b color segundario  #e97272
 

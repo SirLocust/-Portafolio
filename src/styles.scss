@@ -7,6 +7,10 @@ url(
     './assets/backGround_portafolio.jpg'  )
 ;
 // "https://cdn.pixabay.com/photo/2016/03/09/09/42/buildings-1245953_960_720.jpg"
+:root{
+    scrollbar-color: rgb(21, 21, 21) rgb(204, 216, 204);
+    scrollbar-width: thin;
+}
 body {
     background: $urlBackGround no-repeat center center;
     background-size: cover;
@@ -16,6 +20,18 @@ body {
     min-height: 100vh;
 
     font-size: 16px;
+   
+}
+body::-webkit-scrollbar{
+    background-color:rgb(204, 216, 204);
+    width: 0.3125em;
+    
+}
+body::-webkit-scrollbar-thumb{
+    background-color:rgb(21, 21, 21);
+    width: 0.3125em;
+    
+    
 }
 
 @mixin flexCenter{

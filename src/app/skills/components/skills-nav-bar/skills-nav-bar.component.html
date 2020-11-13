@@ -1,10 +1,16 @@
-<div class="skills_navbar"><fa-icon [icon]="['fab','angular']"></fa-icon></div>
-<div class="skills_navbar"><fa-icon [icon]="['fab','js']"></fa-icon></div>
-<div class="skills_navbar"><fa-icon [icon]="['fab','java']"></fa-icon></div>
-<div class="skills_navbar"><fa-icon [icon]="['fab','html5']"></fa-icon></div>
-<div class="skills_navbar"><fa-icon [icon]="['fab','css3']"></fa-icon></div>
-<div class="skills_navbar"><fa-icon [icon]="['fab','git']"></fa-icon></div>
-
-
-
-
+<div class="skills_navbar" routerLink="/skills/angular">
+  <fa-icon [icon]="['fab', 'angular']"></fa-icon>
+</div>
+<div class="skills_navbar" routerLink="/skills/javascript">
+  <fa-icon [icon]="['fab', 'js']"></fa-icon>
+</div>
+<div class="skills_navbar" routerLink="/skills/java">
+  <fa-icon [icon]="['fab', 'java']"></fa-icon>
+</div>
+<div class="skills_navbar" routerLink="/skills/html5">
+  <fa-icon [icon]="['fab', 'html5']"></fa-icon>
+</div>
+<div class="skills_navbar" routerLink="/skills/css3">
+  <fa-icon [icon]="['fab', 'css3']" routerLink="/skills/git"></fa-icon>
+</div>
+<div class="skills_navbar"><fa-icon [icon]="['fab', 'git']"></fa-icon></div>

@@ -15,7 +15,9 @@ const routes: Routes = [
   {
     path: 'cv',
     loadChildren: () => import('./curriculum/curriculum.module').then( (m) => m.CurriculumModule)
-  }
+  },
+  { path: '**',   redirectTo: '/home', pathMatch: 'full' },
+
 ];
 
 @NgModule({
