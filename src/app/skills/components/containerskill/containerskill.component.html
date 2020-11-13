@@ -1,6 +1,8 @@
-<div *ngIf="isOnLogo" class="skills_information skills_information_size40">
+<div class="skills_information skills_information_size40">
   <!-- <ng-content select=".left_text"></ng-content> -->
   <div
+    [@activeRotate]="isRotate"
+    class="skills_card"
     [ngStyle]="{
       'background-color': 'rgba(' + backgroundColorInfos + ',0.9)'
     }"
@@ -25,10 +27,12 @@
   />
 </div>
 
-<div *ngIf="isOnLogo" class="skills_information skills_information_size40">
+<div class="skills_information skills_information_size40">
   <!-- <ng-content  select=".right_text"></ng-content> -->
 
   <div
+    [@activeRotate]="isRotate"
+    class="skills_card"
     [ngStyle]="{
       'background-color': 'rgba(' + backgroundColorInfos + ',0.9)'
     }"
@@ -40,8 +44,7 @@
       <h1>{{ skills.title }}</h1>
       <p>{{ skills.info }}</p>
 
-      <hr *ngIf="i < this.skillsInfoRigth.length-1">
-      
+      <hr *ngIf="i < this.skillsInfoRigth.length - 1" />
     </div>
   </div>
 </div>
