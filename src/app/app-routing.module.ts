@@ -13,11 +13,16 @@ const routes: Routes = [
       import('./skills/skills.module').then((m) => m.SkillsModule),
   },
   {
-    path: 'cv',
-    loadChildren: () => import('./curriculum/curriculum.module').then( (m) => m.CurriculumModule)
+    path: 'portafolio',
+    loadChildren: () =>
+      import('./portafolio/portafolio.module').then((m) => m.PortafolioModule),
   },
-  { path: '**',   redirectTo: '/home', pathMatch: 'full' },
-
+  {
+    path: 'cv',
+    loadChildren: () =>
+      import('./curriculum/curriculum.module').then((m) => m.CurriculumModule),
+  },
+  { path: '**', redirectTo: '/home', pathMatch: 'full' },
 ];
 
 @NgModule({

@@ -1,0 +1,78 @@
+:host{
+  // display:flex;
+  // background-color: azure;
+  // height: 100vh;
+  width: 20%;
+}
+
+.sideBar{
+  display:flex;
+  // background-color: azure;
+  height: 100vh;
+  width: 100%;
+}
+
+
+
+.sideBar__infoUser{
+  
+  background-color: rgba($color: #ff4662, $alpha: 1);
+  // border: 1px solid red;
+  width: 90%;
+}
+.sideBar__navBar{
+  // color: wheat;
+  text-orientation: upright;
+  writing-mode: vertical-lr;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 100%;
+
+  background-color: rgba($color: #000000, $alpha: 1);
+  // border: 1px solid red;
+  width: 10%;
+  cursor: pointer;
+}
+.flex_center_heigth
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  
+}
+.sideBar__navBar__item1{
+  background-color: white;
+    // border-left: 34px solid white;
+    // border-bottom: 100px solid transparent;
+  // transform: skew(20deg);
+  P{
+    // position: relative;
+    // left: -16px;
+    // z-index: 1;
+    // color: white;
+  }
+}
+.sideBar__navBar__item2{
+  // background-color: #ff0000;
+  // border-right: 34px solid transparent;
+    // border-left: 60px solid transparent;
+    // border-top: 100px solid #ff0000;
+  // transform: skew(20deg);
+  color: white;
+}
+
+
+.cardGitUser{
+  background-color: white;
+  height: 25em;
+  width: 80%;
+
+}
+.cardGitUser_title{
+  height: 0.3em;
+  h4{
+    margin: 0.625em;
+  }
+}
