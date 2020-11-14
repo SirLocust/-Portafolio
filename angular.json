@@ -32,7 +32,6 @@
               "src/global_mixins_variables.scss",
               "./node_modules/normalize.css/normalize.css",
               "./node_modules/material-design-icons/iconfont/material-icons.css"
-              
             ],
             "scripts": []
           },
@@ -125,8 +124,13 @@
               "devServerTarget": "Portafolio:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {}
         }
       }
-    }},
+    }
+  },
   "defaultProject": "Portafolio"
 }

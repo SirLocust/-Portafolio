@@ -15,7 +15,7 @@ export class BioComponent implements OnInit {
    this.typeEffect(this.textWelcome);
   }
   typeEffect(txt: string): void {
-    const soundTyping = new Audio('/assets/typewriter.mp3');
+    const soundTyping = new Audio('assets/typewriter.mp3');
     soundTyping.load();
     const intervalo = setInterval(() => {
       soundTyping.play();

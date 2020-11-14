@@ -8,7 +8,7 @@ import { Component, HostBinding, OnInit } from '@angular/core';
 })
 export class JavaScriptComponent implements OnInit {
   @HostBinding('class') containerWith = 'container_with';
-  logoJavaScriptUrl = '../../../../assets/javascript-39404.png';
+  logoJavaScriptUrl = 'assets/javascript-39404.png';
   colorBackground = '247,223,30';
   skillsJavaScriptLeft: InfoSkills[] = [
     {
