@@ -12,6 +12,7 @@ export class SideBarComponent implements OnInit {
 
   ngOnInit(): void {
     this.gitservice.getUser().subscribe( (user) => {
+      console.log(user)
       this.user = user;
     })
   }

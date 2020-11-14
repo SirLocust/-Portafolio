@@ -3,7 +3,26 @@
     <div class="cardGitUser" *ngIf="this.user">
       <div class="cardGitUser_title">
         <h4>{{ user.login }}</h4>
-        <hr />
+      </div>
+      <div class="cardGitUser__img">
+        <img [src]="this.user['avatar_url']" alt="" />
+      </div>
+      <div class="cardGitUser__Bio">
+        <p>
+          {{ this.user.bio }}
+        </p>
+      </div>
+      <div class="cardGitUser__footer">
+        <div class="cardGitUser__footer__item">
+          <p>Followers</p>
+
+          <p>{{ this.user.followers }}</p>
+        </div>
+        <div class="cardGitUser__footer__item">
+          <p>Repos</p>
+
+          <p>{{ this.user.public_repos }}</p>
+        </div>
       </div>
     </div>
   </div>
