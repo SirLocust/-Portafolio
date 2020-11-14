@@ -9,7 +9,7 @@ import { InfoSkills } from '../../models/InfoSkills.model';
 export class AngularComponent implements OnInit {
   @HostBinding('class') containerWith = 'container_with';
   colorBackground = '195,14,46';
-  logoAngularUrl = '../../../../assets/angular.png';
+  logoAngularUrl = 'assets/angular.png';
   skillsAngularLeft: InfoSkills[] = [
     {
       title: 'sintaxis basica',
