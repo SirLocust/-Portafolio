@@ -3,13 +3,27 @@
  
   padding: 0.625em;
   background-color: white;
+  
+  border: 1px solid var(--main-color-red);
   width: 14.5em;
-  height: 14.5em;
+  height: 17em;
   border-radius: 0.625em;
   p{
     // width: 70%;
     overflow-wrap: break-word;
     margin: 0%;
+  }
+  animation: intoCard 0.4s ease-in ;
+  transform-origin: center;
+}
+
+@keyframes intoCard{
+  from{
+    background-color: black;
+    transform: scale(0);
+  }
+  to{
+    transform: scale(1);
   }
 }
 .cardRepo__title{

@@ -1,0 +1,11 @@
+<div>
+  <div class="gridRepos">
+    <app-card-git
+      *ngFor="let repo of this.repos"
+      [nameRepo]="repo.name"
+      [descriptionRepo]="repo.description"
+      [urlRepo]="repo.html_url"
+    >
+    </app-card-git>
+  </div>
+</div>
