@@ -1,0 +1,41 @@
+
+.cardRepo{
+ 
+  padding: 0.625em;
+  background-color: white;
+  width: 14.5em;
+  height: 14.5em;
+  border-radius: 0.625em;
+  p{
+    // width: 70%;
+    overflow-wrap: break-word;
+    margin: 0%;
+  }
+}
+.cardRepo__title{
+  height: 20%;
+  border-bottom: 0.125em solid  var(--main-color-red);
+
+}
+.cardRepo__body{
+  
+  height: 60%;
+  // margin: auto;
+  border-bottom: 0.125em solid  var(--main-color-red);
+  
+}
+.cardRepo__footer{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 20%;
+  // margin: auto;
+  div{
+    width: 100%;
+    // height: 100%;
+  }
+  div:nth-child(1){
+    border-right: 1px solid var(--main-color-red);
+  }
+  
+}

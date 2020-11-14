@@ -1,0 +1,26 @@
+<div class="cardRepo">
+  <div class="cardRepo__title">
+    <p>
+      {{ this.nameRepo }}
+    </p>
+  </div>
+
+  <div class="cardRepo__body flex_center">
+    <p *ngIf="this.descriptionRepo !== null; else repoWithDescription">
+      {{ this.descriptionRepo }}
+    </p>
+    <ng-template #repoWithDescription>
+      <p>Repositorio sin descripción aun</p>
+    </ng-template>
+  </div>
+  <div class="cardRepo__footer">
+    <div>
+      <p>
+        {{ this.lengthCommits }}
+      </p>
+    </div>
+    <div>
+      <a [href]="this.urlRepo" target="_black">go to </a>
+    </div>
+  </div>
+</div>

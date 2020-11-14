@@ -7,17 +7,17 @@
     align-items: center;
 }
 
-.cont{
-  height: 100vh;
+.sideBar__fixed{
+  // height: 100vh;
   width: 20%;
   position: fixed;
   z-index: 1;
   top: 0;
   left: 0;
 }
-.b{
+.sectionRoutes{
   // border-left: 2px solid #ff4662;
   min-height: 100vh;
   width: 80%;
-  margin-left: 18.75em;
+  margin-left: 22.75em;
 }

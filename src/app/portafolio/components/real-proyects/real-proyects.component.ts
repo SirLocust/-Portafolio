@@ -12,13 +12,13 @@ export class RealProyectsComponent implements OnInit {
 
   ngOnInit(): void {
     this.gitService.getAllRespositories()
-    // .pipe(
-    //   map( (data) => {
-    //     return  data.filter( data => {
-    //        return data.name.charAt(0) === '-';
-    //        })
-    //   })
-    // )
+    .pipe(
+      map( (data) => {
+        return  data.filter( data => {
+           return data.name.charAt(0) === '-';
+           })
+      })
+    )
     .subscribe( (repos) => {
       console.log(repos)
       this.repos = repos;
