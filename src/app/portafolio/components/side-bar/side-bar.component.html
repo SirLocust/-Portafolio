@@ -1,0 +1,40 @@
+<div class="sideBar">
+  <div class="sideBar__infoUser flex_center_heigth">
+    <div class="cardGitUser" *ngIf="this.user">
+      <div class="cardGitUser_title">
+        <h4>{{ user.login }}</h4>
+      </div>
+      <div class="cardGitUser__img">
+        <img [src]="this.user['avatar_url']" alt="" />
+      </div>
+      <div class="cardGitUser__Bio">
+        <p>
+          {{ this.user.bio }}
+        </p>
+      </div>
+      <div class="cardGitUser__footer">
+        <div class="cardGitUser__footer__item">
+          <p>Followers</p>
+
+          <p>{{ this.user.followers }}</p>
+        </div>
+        <div class="cardGitUser__footer__item">
+          <p>Repos</p>
+
+          <p>{{ this.user.public_repos }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="sideBar__navBar">
+    <div
+      class="sideBar__navBar__item1 flex_center_heigth"
+      routerLink="/portafolio/realProyects"
+    >
+      <p>Proyectos Reales</p>
+    </div>
+    <div class="sideBar__navBar__item2 flex_center_heigth">
+      <p>Cursos y Ejercicios</p>
+    </div>
+  </div>
+</div>
