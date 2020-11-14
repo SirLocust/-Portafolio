@@ -1,12 +1,13 @@
-import { GitServiceService } from './../../../core/git-service.service';
 import { Component, OnInit } from '@angular/core';
-import { filter, map} from 'rxjs/operators';
+import { map } from 'rxjs/operators';
+import { GitServiceService } from 'src/app/core/git-service.service';
+
 @Component({
-  selector: 'app-real-proyects',
-  templateUrl: './real-proyects.component.html',
-  styleUrls: ['./real-proyects.component.scss']
+  selector: 'app-exercise-course',
+  templateUrl: './exercise-course.component.html',
+  styleUrls: ['./exercise-course.component.scss']
 })
-export class RealProyectsComponent implements OnInit {
+export class ExerciseCourseComponent implements OnInit {
   repos = [];
   constructor(public gitService: GitServiceService) { }
 
@@ -15,7 +16,7 @@ export class RealProyectsComponent implements OnInit {
     .pipe(
       map( (data) => {
         return  data.filter( data => {
-           return data.name.charAt(0) === '-';
+           return data.name.charAt(0) !== '-';
            })
       })
     )
