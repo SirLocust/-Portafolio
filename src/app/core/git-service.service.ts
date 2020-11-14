@@ -9,10 +9,18 @@ export class GitServiceService {
   urlApi = 'https://api.github.com';
   user = 'SirLocust';
 
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient) {
+  //   this.http.get('https://github.com/login/oauth/authorize?client_id=1c4ebdb1f4114c9fa30c').subscribe( data => {
+  //     console.log(data)
+  //   })
+  }
 
   getAllRespositories(): Observable<any> {
-    return this.http.get(`${this.urlApi}/users/${this.user}/repos`);
+    const header = new HttpHeaders({
+      Accept: 'application/vnd.github.v3.html',
+      Authorization: 'token 5fa86c6a90351aee3e51e4514dd8fd90f812ac86'
+    });
+    return this.http.get(`${this.urlApi}/users/${this.user}/repos`, { headers: header});
   }
   getCommitsRepo(nameRepo): Observable<any> {
     return this.http.get(
@@ -32,7 +40,11 @@ export class GitServiceService {
   }
 
   getUser(): Observable<any>{
-    return this.http.get(`${this.urlApi}/users/${this.user}`);
+    const header = new HttpHeaders({
+      Accept: 'application/vnd.github.v3.html',
+      Authorization: 'token 5fa86c6a90351aee3e51e4514dd8fd90f812ac86'
+    });
+    return this.http.get(`${this.urlApi}/users/${this.user}`,{ headers:header});
   }
   getEventsUser(): Observable<any>{
     // header.append('Access-Control-Allow-Headers', 'accept', 'Content-Type');

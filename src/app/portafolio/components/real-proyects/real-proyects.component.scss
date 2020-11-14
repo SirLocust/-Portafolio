@@ -1,0 +1,42 @@
+:host{
+  min-height: 100vh;
+  // margin-top: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  // padding: 20px;
+}
+.cons{
+  
+  padding: 1.25em;
+  min-height: 90vh;
+  // width: 80%;
+  // padding: 20px;
+  // margin: 20px;
+}
+.gridRepos{
+  // display: flex;
+
+  // flex-direction: row;
+
+  // padding:10px;
+  // width: 85%;
+  // min-height: 90%;
+  // overflow: auto;
+  display: grid;
+  row-gap: 0.625em;
+  column-gap: 0.625em;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  
+}
+
+.cardRepo{
+  padding: 0.625em;
+  background-color: bisque;
+  width: 12.5em;
+  height: 12.5em;
+  p{
+    overflow-wrap: break-word;
+  }
+}
