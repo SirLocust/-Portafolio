@@ -30,14 +30,12 @@ export class GitServiceService {
     );
   }
 
-  getReadmeRepo(): Observable<any> {
-    const header = new HttpHeaders({
-      Accept: 'application/vnd.github.v3.html',
-    });
+  getReadmeRepo(nameRepo: string): Observable<any> {
+
 
     return this.http.get(
-      'https://api.github.com/repos/SirLocust/-Portafolio/readme',
-      { headers: header, responseType: 'text' }
+      `https://api.github.com/repos/SirLocust/${nameRepo}/readme`,
+      { headers: this.headerAuthorization, responseType: 'text' }
     );
   }
 
