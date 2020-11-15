@@ -1,6 +1,8 @@
 <div class="cardRepo">
+  <div *ngIf="this.urlImg | async" class="cardRepo__ImgThumbnail">
+    <img [src]="this.urlImg | async" alt="" />
+  </div>
   <div class="cardRepo__title">
-    <img *ngIf="this.urlImg" [src]="this.urlImg" alt="" />
     <p>
       {{ this.nameRepo }}
     </p>
@@ -16,12 +18,15 @@
   </div>
   <div class="cardRepo__footer">
     <div>
+      <p># commits</p>
       <p>
         {{ this.lengthCommits }}
       </p>
     </div>
     <div>
-      <a [href]="this.urlRepo" target="_black">go to </a>
+      <a class="cardRepo__footer__link" [href]="this.urlRepo" target="_black"
+        >Ver</a
+      >
     </div>
   </div>
 </div>
