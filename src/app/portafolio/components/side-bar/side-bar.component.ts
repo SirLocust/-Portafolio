@@ -1,3 +1,4 @@
+import { UserGit } from './../../../core/models/user-git.model';
 import { GitServiceService } from './../../../core/git-service.service';
 import { Component, HostBinding, OnInit } from '@angular/core';
 
@@ -7,11 +8,11 @@ import { Component, HostBinding, OnInit } from '@angular/core';
   styleUrls: ['./side-bar.component.scss'],
 })
 export class SideBarComponent implements OnInit {
-  user;
+  user: UserGit;
   constructor(private gitservice: GitServiceService) {}
 
   ngOnInit(): void {
-    this.gitservice.getUser().subscribe((user) => {
+    this.gitservice.getUser().subscribe((user: UserGit) => {
       this.user = user;
     });
   }

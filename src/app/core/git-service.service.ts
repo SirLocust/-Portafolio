@@ -1,3 +1,5 @@
+import { UserGit } from './models/user-git.model';
+import { RepositoryGit } from './models/repository-git.model';
 import { map } from 'rxjs/operators';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
@@ -11,26 +13,26 @@ export class GitServiceService {
   user = 'SirLocust';
   headerAuthorization = new HttpHeaders({
     Accept: 'application/vnd.github.v3.html',
-    // Authorization: 'token '
+    Authorization: 'token 5b2ba8348359945a1e1b94895efb7d3dee3c039b'
   });
   constructor(private http: HttpClient) {
 
   }
 
-  getAllRespositories(): Observable<any> {
-    return this.http.get(`${this.urlApi}/users/${this.user}/repos`, { headers: this.headerAuthorization});
+  getAllRespositories(): Observable<RepositoryGit[]> {
+    return this.http.get<RepositoryGit[]>(`${this.urlApi}/users/${this.user}/repos`, { headers: this.headerAuthorization});
   }
-  getCommitsRepo(nameRepo): Observable<any> {
+  getCommitsRepo(nameRepo): Observable<number> {
     return this.http.get<[]>(
-      `${this.urlApi}/repos/${this.user}/${nameRepo}/commits`,{
+      `${this.urlApi}/repos/${this.user}/${nameRepo}/commits?per_page=100`, {
         headers: this.headerAuthorization,
       }
     ).pipe(
-      map( data => data.length)
+      map( (data: [])  => data.length)
     );
   }
 
-  getReadmeRepo(nameRepo: string): Observable<any> {
+  getReadmeRepo(nameRepo: string): Observable<string> {
 
 
     return this.http.get(
@@ -39,11 +41,11 @@ export class GitServiceService {
     );
   }
 
-  getUser(): Observable<any>{
-    return this.http.get(`${this.urlApi}/users/${this.user}`,{ headers:this.headerAuthorization});
+  getUser(): Observable<UserGit>{
+    return this.http.get<UserGit>(`${this.urlApi}/users/${this.user}`,{ headers: this.headerAuthorization});
   }
-  getEventsUser(): Observable<any>{
-    // header.append('Access-Control-Allow-Headers', 'accept', 'Content-Type');
-    return this.http.get(`${this.urlApi}/users/${this.user}/events?per_page=100`);
-  }
+  // getEventsUser(): Observable<any>{
+  //   // header.append('Access-Control-Allow-Headers', 'accept', 'Content-Type');
+  //   return this.http.get(`${this.urlApi}/users/${this.user}/events?per_page=100`);
+  // }
 }

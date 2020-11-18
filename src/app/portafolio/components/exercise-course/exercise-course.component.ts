@@ -1,28 +1,29 @@
 import { Component, OnInit } from '@angular/core';
 import { map } from 'rxjs/operators';
 import { GitServiceService } from 'src/app/core/git-service.service';
+import { RepositoryGit } from 'src/app/core/models/repository-git.model';
 
 @Component({
   selector: 'app-exercise-course',
   templateUrl: './exercise-course.component.html',
-  styleUrls: ['./exercise-course.component.scss']
+  styleUrls: ['./exercise-course.component.scss'],
 })
 export class ExerciseCourseComponent implements OnInit {
-  repos = [];
-  constructor(public gitService: GitServiceService) { }
+  repos: RepositoryGit[] = [];
+  constructor(public gitService: GitServiceService) {}
 
   ngOnInit(): void {
-    this.gitService.getAllRespositories()
-    .pipe(
-      map( (data) => {
-        return  data.filter( data => {
-           return data.name.charAt(0) !== '-';
-           })
-      })
-    )
-    .subscribe( (repos) => {
-      this.repos = repos;
-    });
+    this.gitService
+      .getAllRespositories()
+      .pipe(
+        map((repositories: RepositoryGit[]) => {
+          return repositories.filter((repository: RepositoryGit) => {
+            return repository.name.charAt(0) !== '-';
+          });
+        })
+      )
+      .subscribe((repositories: RepositoryGit[]) => {
+        this.repos = repositories;
+      });
   }
-
 }

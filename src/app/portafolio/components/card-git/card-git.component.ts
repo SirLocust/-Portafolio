@@ -12,14 +12,12 @@ export class CardGitComponent implements OnInit {
   @Input() descriptionRepo: string;
   @Input() urlRepo: string;
   lengthCommits: number;
-  urlImg:Observable<string>;
-  ;
+  urlImg: Observable<string>;
   constructor(private gitService: GitServiceService) {}
 
   ngOnInit(): void {
-    
-    
-    this.gitService.getCommitsRepo(this.nameRepo).subscribe((commitsLength) => {
+
+    this.gitService.getCommitsRepo(this.nameRepo).subscribe((commitsLength: number) => {
       this.lengthCommits = commitsLength;
     });
     this.gitService.getReadmeRepo(this.nameRepo).subscribe( (readmeTxt: string) =>{
@@ -28,7 +26,7 @@ export class CardGitComponent implements OnInit {
   }
 
   extractUrlImgInReadme(readmeTxt: string): Observable<string>{
-    if(!readmeTxt.match(/(<img src=").+(">)/g)){
+    if (!readmeTxt.match(/(<img src=").+(">)/g)){
       return undefined;
     }
     let arraySplit = readmeTxt.split(/<img src="/);
