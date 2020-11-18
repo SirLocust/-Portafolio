@@ -17,7 +17,6 @@ export class ExerciseCourseComponent implements OnInit {
       .getAllRespositories()
       .pipe(
         map((repositories: RepositoryGit[]) => {
-          console.log(repositories);
           return repositories.filter((repository: RepositoryGit) => {
             return repository.name.charAt(0) !== '-';
           });

@@ -24,7 +24,7 @@ export class GitServiceService {
   }
   getCommitsRepo(nameRepo): Observable<number> {
     return this.http.get<[]>(
-      `${this.urlApi}/repos/${this.user}/${nameRepo}/commits`,{
+      `${this.urlApi}/repos/${this.user}/${nameRepo}/commits?per_page=100`, {
         headers: this.headerAuthorization,
       }
     ).pipe(
