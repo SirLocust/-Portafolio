@@ -3,13 +3,19 @@
 :host{
     height: 80vh;
     width: 90vw;
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    // align-items: center;
+}
+.h{
+    height: 80vh;
+    width: 90vw;
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr;
-    // justify-content: space-around;
-    // align-items: center;
 }
-
 .containerbio{
         display: flex;
         justify-content: space-around;
