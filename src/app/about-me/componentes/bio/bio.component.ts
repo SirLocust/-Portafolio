@@ -8,7 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class BioComponent implements OnInit {
   title = '';
   textWelcome = 'Bienvenido a mi sitio Web...';
-  bioVisible = true;
+  bioVisible = false;
+  soundTyping = new Audio('assets/typewriter.mp3');
   constructor() {}
 
   ngOnInit(): void {
@@ -16,17 +17,16 @@ export class BioComponent implements OnInit {
   }
   typeEffect(txt: string): void {
     if(this.bioVisible === true){
-      return
+      return;
     }
-    const soundTyping = new Audio('assets/typewriter.mp3');
-    soundTyping.load();
+    this.soundTyping.load();
     const intervalo = setInterval(() => {
-      soundTyping.play();
+      this.soundTyping.play();
       this.title += txt.charAt(this.title.length);
       if (this.title.length >= txt.length) {
         clearInterval(intervalo);
-        soundTyping.pause();
-        setTimeout(()=>{
+        this.soundTyping.pause();
+        setTimeout( () => {
 
           this.bioVisible = true;
         }, 1000);
