@@ -1,0 +1,11 @@
+<a
+  #anchorButton
+  [href]="this.urlSocialMedia"
+  target="_black"
+  class="socialButton__item"
+>
+  <span *ngIf="this.showTooltip" class="socialButton__toolTip">{{
+    this.nameSocialMedia
+  }}</span>
+  <ng-content></ng-content>
+</a>

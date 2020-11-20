@@ -3,9 +3,19 @@
 :host{
     height: 80vh;
     width: 90vw;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    // justify-content: space-around;
+    // align-items: center;
+}
+
+.containerbio{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 65vh;
+    
 }
 
 
@@ -25,6 +35,8 @@
     padding: 1em;
     background-color:rgba(0, 0, 0, .8);
     min-width: 20em;
+    max-width: 27em;
+
     max-height: 23em;
     border-radius: 0.125em;
     animation: into 0.5s ease-in-out ;

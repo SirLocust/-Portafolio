@@ -8,6 +8,8 @@ import { ButtonScrollToComponent } from './button-scroll-to/button-scroll-to.com
 import { CardsComponent } from './cards/cards.component';
 import { HoverDDirective } from './cards/directives/hover-d.directive';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { SocialbuttonGroupComponent } from './components/socialbutton-group/socialbutton-group.component';
+import { SocialButtonComponent } from './components/social-button/social-button.component';
 @NgModule({
   declarations: [
     NavbarComponent,
@@ -16,6 +18,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     ButtonScrollToComponent,
     CardsComponent,
     HoverDDirective,
+    SocialbuttonGroupComponent,
+    SocialButtonComponent,
   ],
   imports: [CommonModule, FontAwesomeModule, RouterModule],
   exports: [
@@ -24,6 +28,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     SectionComponent,
     ButtonScrollToComponent,
     CardsComponent,
+    SocialbuttonGroupComponent
   ],
 })
 export class ShareModule {}

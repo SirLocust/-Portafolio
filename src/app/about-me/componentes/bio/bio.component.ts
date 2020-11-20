@@ -8,13 +8,16 @@ import { Component, OnInit } from '@angular/core';
 export class BioComponent implements OnInit {
   title = '';
   textWelcome = 'Bienvenido a mi sitio Web...';
-  bioVisible = false;
+  bioVisible = true;
   constructor() {}
 
   ngOnInit(): void {
    this.typeEffect(this.textWelcome);
   }
   typeEffect(txt: string): void {
+    if(this.bioVisible === true){
+      return
+    }
     const soundTyping = new Audio('assets/typewriter.mp3');
     soundTyping.load();
     const intervalo = setInterval(() => {
