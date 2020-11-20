@@ -1,16 +1,41 @@
-import { Component, Input, OnInit } from '@angular/core';
+import {
+  AfterViewInit,
+  Component,
+  Input,
+  OnInit,
+  Renderer2,
+  ViewChild,
+  ViewContainerRef,
+} from '@angular/core';
 
 @Component({
   selector: 'app-social-button',
   templateUrl: './social-button.component.html',
-  styleUrls: ['./social-button.component.scss']
+  styleUrls: ['./social-button.component.scss'],
 })
-export class SocialButtonComponent implements OnInit {
-
+export class SocialButtonComponent implements OnInit, AfterViewInit {
   @Input() urlSocialMedia = '';
-  constructor() { }
+  @Input() nameSocialMedia = '';
+  @ViewChild('anchorButton', { read: ViewContainerRef, static: false })
+  anchorButton: ViewContainerRef;
+  showTooltip = false;
 
-  ngOnInit(): void {
+  constructor(private rederer: Renderer2) {}
+  ngOnInit(): void {}
+  ngAfterViewInit(): void {
+    this.rederer.listen(
+      this.anchorButton.element.nativeElement,
+      'mouseenter',
+      () => {
+        this.showTooltip = !this.showTooltip;
+      }
+    );
+    this.rederer.listen(
+      this.anchorButton.element.nativeElement,
+      'mouseleave',
+      () => {
+        this.showTooltip = !this.showTooltip;
+      }
+    );
   }
-
 }

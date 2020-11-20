@@ -1,0 +1,50 @@
+.socialButton__item{
+  position: relative;
+  display: inline-block;
+  // width: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
+  color: white;
+  transition: transform 0.4s ease-out;
+  // height: 20px;
+  // width:  20px;
+  // background-color: aqua;
+  text-decoration: non;
+
+
+}
+.socialButton__item:hover {
+  color:red;
+  .socialButton__toolTip{
+    color: white;
+  }
+
+} 
+
+
+
+.socialButton__toolTip{
+
+  text-decoration: none;
+  display: block;
+  position: absolute;
+  min-width: 80px;
+  left: -1px;
+  bottom: 46px;
+  z-index: 500;
+  margin-bottom: 20px;
+}
+
+
+
+.socialButton__toolTip::after{
+  content: "";
+  display: block;
+
+  border-top: 5px solid white;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  position: absolute;
+  left: 20%;
+  bottom: -10px;;
+}

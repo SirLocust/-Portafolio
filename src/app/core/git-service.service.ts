@@ -13,7 +13,7 @@ export class GitServiceService {
   user = 'SirLocust';
   headerAuthorization = new HttpHeaders({
     Accept: 'application/vnd.github.v3.html',
-    Authorization: 'token 5b2ba8348359945a1e1b94895efb7d3dee3c039b'
+    // Authorization: 'token'
   });
   constructor(private http: HttpClient) {
 
