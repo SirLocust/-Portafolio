@@ -1,3 +1,4 @@
+import { Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 import { PersonalData } from './models/personal-data.model';
 import { Injectable, EventEmitter } from '@angular/core';
@@ -6,12 +7,9 @@ import { Injectable, EventEmitter } from '@angular/core';
   providedIn: 'root',
 })
 export class PersonaDataService {
-  pesonalData: PersonalData;
+  pesonalData: Observable<PersonalData>;
   constructor(private http: HttpClient) {
-    this.http
-      .get<PersonalData>('assets/data/data-portafolio.json')
-      .subscribe((data: PersonalData) => {
-        this.pesonalData = data;
-      });
+    this.pesonalData = this.http
+      .get<PersonalData>('assets/data/data-portafolio.json');
   }
 }
