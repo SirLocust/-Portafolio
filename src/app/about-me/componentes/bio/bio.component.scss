@@ -41,9 +41,9 @@
     padding: 1em;
     background-color:rgba(0, 0, 0, .8);
     min-width: 20em;
-    max-width: 27em;
+    max-width: 30em;
 
-    max-height: 23em;
+    min-height: 23em;
     border-radius: 0.125em;
     animation: into 0.5s ease-in-out ;
     color :white;
@@ -117,7 +117,7 @@
     // padding: 0.625em;
 
     font-size: 1em ;
-    max-width:  20em;
+    max-width:  70%;
 
     
     margin-left: -6em;

@@ -1,4 +1,4 @@
-import { GitServiceService } from './core/git-service.service';
+import { PersonaDataService } from './core/persona-data.service';
 import { Component, ElementRef, OnInit, Renderer2 } from '@angular/core';
 
 @Component({
@@ -11,7 +11,7 @@ export class AppComponent implements OnInit {
   gitHubRepos = [];
 
   constructor(private render2: Renderer2,
-              private gitService: GitServiceService
+              public personalDataService: PersonaDataService,
               ) {}
 
   ngOnInit(): void {
@@ -22,13 +22,7 @@ export class AppComponent implements OnInit {
 
 
   }
-  // change() {
-  //   console.log('s');
-  //   document.documentElement.requestFullscreen();
-  //   screen.orientation.lock('landscape-primary');
-  // }
   isLandScape(): void {
-    
     const screenOrientation: string = window.screen.orientation.type;
 
     const isLandScapeAnyType: boolean =

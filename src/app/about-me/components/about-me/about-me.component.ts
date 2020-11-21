@@ -1,4 +1,5 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { PersonaDataService } from 'src/app/core/persona-data.service';
 
 @Component({
   selector: 'app-about-me',
@@ -8,7 +9,7 @@ import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 export class AboutMeComponent implements OnInit {
   
 
-  constructor() { }
+  constructor(public personalDataService: PersonaDataService) { }
 
   ngOnInit(): void {
 

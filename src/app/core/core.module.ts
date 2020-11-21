@@ -1,6 +1,8 @@
+import { PersonaDataService } from './persona-data.service';
 import { GitServiceService } from './git-service.service';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+
 
 
 
@@ -9,8 +11,9 @@ import { CommonModule } from '@angular/common';
   imports: [
     CommonModule
   ],
-  providers:[
-    GitServiceService
+  providers: [
+    GitServiceService,
+    PersonaDataService
   ]
   
 })
