@@ -1,0 +1,35 @@
+{
+  "bioInfo": 
+    {
+      "title" : [
+        "Junior",
+        "Developer"
+      ],
+      "biofirst" : " Junior Frontend developer en angular con 1 año de experiencia como freelance apasionado por angular y las aplicaciones web buscando una empresa para desarrollar mis habilidades en el mundo del frontend y aportar a esta mi conocimiento",
+      "bioSecond" : "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta eum est odio necessitatibus voluptatem magni molestiae fugit nisi ratione voluptas impedit laborum modi suscipit repudiandae facere, ex vel. Quisquam, quo.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta eum est odio necessitatibus voluptatem magni molestiae fugit nisi ratione voluptas impedit laborum modi suscipit repudiandae facere, ex vel. Quisquam, quoLorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta eum est odio necessitatibus voluptatem magni molestiae fugit nisi ratione voluptas impedit laborum modi suscipit repudiandae facere, ex vel. Quisquam, quo"
+    }
+    
+  ,
+  "skillsInfo": {
+
+    "java" : [
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta eum est odio necessitatibus voluptatem magni molestiae fugit nisi ratione voluptas impedit laborum modi suscipit repudiandae facere, ex vel. Quisquam, quo",
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta eum est odio necessitatibus voluptatem magni molestiae fugit nisi ratione voluptas impedit laborum modi suscipit repudiandae facere, ex vel. Quisquam, quo"
+    ],
+    "angular" : [
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta eum est odio necessitatibus voluptatem magni molestiae fugit nisi ratione voluptas impedit laborum modi suscipit repudiandae facere, ex vel. Quisquam, quo",
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta eum est odio necessitatibus voluptatem magni molestiae fugit nisi ratione voluptas impedit laborum modi suscipit repudiandae facere, ex vel. Quisquam, quo"
+    ],
+    "javascript" : [
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta eum est odio necessitatibus voluptatem magni molestiae fugit nisi ratione voluptas impedit laborum modi suscipit repudiandae facere, ex vel. Quisquam, quo",
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta eum est odio necessitatibus voluptatem magni molestiae fugit nisi ratione voluptas impedit laborum modi suscipit repudiandae facere, ex vel. Quisquam, quo"
+    ]
+  }
+    
+      
+
+
+  
+
+
+}
