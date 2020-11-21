@@ -11,7 +11,9 @@
 </ng-container>
 
 <div class="h" *ngIf="this.bioVisible">
-  <ng-container *ngIf="this.personalDataService.pesonalData.bioInfo as bioInfo">
+  <ng-container
+    *ngIf="this.personalDataService.pesonalData | async as personalData"
+  >
     <div class="containerbio">
       <div class="cardImg" *ngIf="this.bioVisible">
         <div class="cardImg_picture">
@@ -19,12 +21,12 @@
         </div>
         <div class="cardImg_article">
           <p>
-            {{ bioInfo.biofirst }}
+            {{ personalData.bioInfo.biofirst }}
           </p>
         </div>
       </div>
       <div class="titleHolder" *ngIf="this.bioVisible">
-        <h1 *ngFor="let title of bioInfo.title">{{ title }}</h1>
+        <h1 *ngFor="let title of personalData.bioInfo.title">{{ title }}</h1>
       </div>
     </div>
     <div *ngIf="this.bioVisible" class="flex_center">
