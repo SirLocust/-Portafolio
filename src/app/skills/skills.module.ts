@@ -7,11 +7,13 @@ import { ContainerskillComponent } from './components/containerskill/containersk
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { JavaScriptComponent } from './components/java-script/java-script.component';
 import { AngularComponent } from './components/angular/angular.component';
+import { JavaComponent } from './components/java/java.component';
+import { OtherTiComponent } from './components/other-ti/other-ti.component';
 
 
 
 @NgModule({
-  declarations: [SkillsComponent, SkillsNavBarComponent, ContainerskillComponent, JavaScriptComponent, AngularComponent],
+  declarations: [SkillsComponent, SkillsNavBarComponent, ContainerskillComponent, JavaScriptComponent, AngularComponent, JavaComponent, OtherTiComponent],
   imports: [
     CommonModule,
     SkillsRoutingModule,

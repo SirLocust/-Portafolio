@@ -1,4 +1,5 @@
 export interface InfoSkills{
-    title: string;
-    info: string;
+  java: string[];
+  angular: string[];
+  javascript: string[];
 }

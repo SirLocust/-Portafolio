@@ -20,6 +20,7 @@
     min-height: 93vh;
     // background-color:rgba($color: #000000, $alpha: 0.7);
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -62,6 +63,12 @@
 .skills_Logo{
     width: 50%;
     cursor: pointer;
+   
+}
+.skills_tooltip{
+    font-size: 1.2em;
+    color: white;
+    margin-bottom: 1em;
    
 }
 .skills_Logo_desactive{

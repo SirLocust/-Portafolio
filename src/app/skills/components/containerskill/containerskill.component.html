@@ -7,17 +7,13 @@
       'background-color': 'rgba(' + backgroundColorInfos + ',0.9)'
     }"
   >
-    <div
-      class="flex-center"
-      *ngFor="let skills of this.skillsInfoLeft; index as i"
-    >
-      <h1>{{ skills.title }}</h1>
-      <p>{{ skills.info }}</p>
-      <hr *ngIf="i < this.skillsInfoLeft.length - 1" />
+    <div class="flex-center">
+      <p>{{ this.skillsInfoLeft }}</p>
     </div>
   </div>
 </div>
 <div class="skills_information skills_information_size20">
+  <span class="skills_tooltip">Touch Me</span>
   <img
     class="skills_Logo"
     (click)="toggleIsOnLogo()"
@@ -37,14 +33,8 @@
       'background-color': 'rgba(' + backgroundColorInfos + ',0.9)'
     }"
   >
-    <div
-      class="flex-center"
-      *ngFor="let skills of this.skillsInfoRigth; index as i"
-    >
-      <h1>{{ skills.title }}</h1>
-      <p>{{ skills.info }}</p>
-
-      <hr *ngIf="i < this.skillsInfoRigth.length - 1" />
+    <div class="flex-center">
+      <p>{{ this.skillsInfoRigth }}</p>
     </div>
   </div>
 </div>

@@ -10,19 +10,26 @@
     }
     
   ,
-  "skillsInfo": [
-    {
-      "tecnology" : "Java",
-      "FirstText" : "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta eum est odio necessitatibus voluptatem magni molestiae fugit nisi ratione voluptas impedit laborum modi suscipit repudiandae facere, ex vel. Quisquam, quo.",
-      "SecondText" : "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta eum est odio necessitatibus voluptatem magni molestiae fugit nisi ratione voluptas impedit laborum modi suscipit repudiandae facere, ex vel. Quisquam, quo."
-    },
-    {
-      "tecnology" : "Angular",
-      "FirstText" : "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta eum est odio necessitatibus voluptatem magni molestiae fugit nisi ratione voluptas impedit laborum modi suscipit repudiandae facere, ex vel. Quisquam, quo.",
-      "SecondText" : "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta eum est odio necessitatibus voluptatem magni molestiae fugit nisi ratione voluptas impedit laborum modi suscipit repudiandae facere, ex vel. Quisquam, quo."
-    }
+  "skillsInfo": {
 
-  ]
+    "java" : [
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta eum est odio necessitatibus voluptatem magni molestiae fugit nisi ratione voluptas impedit laborum modi suscipit repudiandae facere, ex vel. Quisquam, quo",
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta eum est odio necessitatibus voluptatem magni molestiae fugit nisi ratione voluptas impedit laborum modi suscipit repudiandae facere, ex vel. Quisquam, quo"
+    ],
+    "angular" : [
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta eum est odio necessitatibus voluptatem magni molestiae fugit nisi ratione voluptas impedit laborum modi suscipit repudiandae facere, ex vel. Quisquam, quo",
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta eum est odio necessitatibus voluptatem magni molestiae fugit nisi ratione voluptas impedit laborum modi suscipit repudiandae facere, ex vel. Quisquam, quo"
+    ],
+    "javascript" : [
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta eum est odio necessitatibus voluptatem magni molestiae fugit nisi ratione voluptas impedit laborum modi suscipit repudiandae facere, ex vel. Quisquam, quo",
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta eum est odio necessitatibus voluptatem magni molestiae fugit nisi ratione voluptas impedit laborum modi suscipit repudiandae facere, ex vel. Quisquam, quo"
+    ]
+  }
+    
+      
+
+
+  
 
 
 }
