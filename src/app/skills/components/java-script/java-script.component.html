@@ -1,7 +1,11 @@
-<app-containerskill
-  [backgroundColorInfos]="this.colorBackground"
-  [logoUrl]="this.logoJavaScriptUrl"
-  [skillsInfoLeft]="this.skillsJavaScriptLeft"
-  [skillsInfoRigth]="this.skillsJavaScriptLeft"
+<ng-container
+  *ngIf="this.personalDataService.pesonalData | async as personalData"
 >
-</app-containerskill>
+  <app-containerskill
+    [backgroundColorInfos]="this.colorBackground"
+    [logoUrl]="this.logoJavaScriptUrl"
+    [skillsInfoLeft]="personalData.skillsInfo.javascript[0]"
+    [skillsInfoRigth]="personalData.skillsInfo.javascript[1]"
+  >
+  </app-containerskill>
+</ng-container>

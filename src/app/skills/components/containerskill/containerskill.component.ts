@@ -38,8 +38,8 @@ export class ContainerskillComponent implements OnInit {
   @HostBinding('class.flex_center') flexCenter = true;
   @Input() logoUrl: string = '/';
   @Input() textColor: string = 'black';
-  @Input() skillsInfoLeft: InfoSkills[];
-  @Input() skillsInfoRigth: InfoSkills[];
+  @Input() skillsInfoLeft: string;
+  @Input() skillsInfoRigth: string;
   @Input() backgroundColorInfos = '0,0,0';
 
   isOnLogo: boolean = false;

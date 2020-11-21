@@ -1,6 +1,5 @@
 export class SkillsInfo {
-    tecnology: string;
-    FirstText: string;
-    SecondText: string;
-  
+    java: string[];
+    angular: string[];
+    javascript: string[];
 }

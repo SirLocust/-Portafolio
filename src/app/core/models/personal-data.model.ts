@@ -5,7 +5,7 @@ export class PersonalData {
 
 
   bioInfo: BioInfo;
-  skillsInfo: SkillsInfo[];
+  skillsInfo: SkillsInfo;
 }
 
 
