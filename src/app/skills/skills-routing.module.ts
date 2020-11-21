@@ -1,3 +1,5 @@
+import { OtherTiComponent } from './components/other-ti/other-ti.component';
+import { JavaComponent } from './components/java/java.component';
 import { AngularComponent } from './components/angular/angular.component';
 import { JavaScriptComponent } from './components/java-script/java-script.component';
 import { SkillsComponent } from './components/skills/skills.component';
@@ -19,6 +21,14 @@ const routes: Routes = [
       {
         path: 'angular',
         component: AngularComponent,
+      },
+      {
+        path: 'java',
+        component: JavaComponent,
+      },
+      {
+        path: 'others',
+        component: OtherTiComponent,
       },
       { path: '**', redirectTo: '/skills/javascript' , pathMatch:'full' },
     ],
