@@ -9,29 +9,27 @@
     >
   </h1>
 </ng-container>
-<div class="h" *ngIf="this.bioVisible">
-  <div class="containerbio">
-    <div class="cardImg" *ngIf="this.bioVisible">
-      <div class="cardImg_picture">
-        <img src="assets/imgProfile.jpg" alt="" />
-      </div>
-      <div class="cardImg_article">
-        <!-- <h1>Un Poco Sobre Mi</h1> -->
-        <p>
-          Junior Frontend developer en angular con 1 año de experiencia como
-          freelance apasionado por angular y las aplicaciones web buscando una
-          empresa para desarrollar mis habilidades en el mundo del frontend y
-          aportar a esta mi conocimiento
-        </p>
-      </div>
-    </div>
-    <div class="titleHolder" *ngIf="this.bioVisible">
-      <h1>JUNIOR</h1>
-      <h1>DEVELOPER</h1>
-    </div>
-  </div>
 
-  <div *ngIf="this.bioVisible" class="flex_center">
-    <app-socialbutton-group></app-socialbutton-group>
+<ng-container *ngIf="this.personalDataService.pesonalData.bioInfo as bioInfo">
+  <div class="h" *ngIf="this.bioVisible">
+    <div class="containerbio">
+      <div class="cardImg" *ngIf="this.bioVisible">
+        <div class="cardImg_picture">
+          <img src="assets/imgProfile.jpg" alt="" />
+        </div>
+        <div class="cardImg_article">
+          <!-- <h1>Un Poco Sobre Mi</h1> -->
+          <p>
+            {{ bioInfo.biofirst }}
+          </p>
+        </div>
+      </div>
+      <div class="titleHolder" *ngIf="this.bioVisible">
+        <h1 *ngFor="let title of bioInfo.title">{{ title }}</h1>
+      </div>
+    </div>
+    <div *ngIf="this.bioVisible" class="flex_center">
+      <app-socialbutton-group></app-socialbutton-group>
+    </div>
   </div>
-</div>
+</ng-container>
