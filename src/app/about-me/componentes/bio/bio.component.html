@@ -10,15 +10,14 @@
   </h1>
 </ng-container>
 
-<ng-container *ngIf="this.personalDataService.pesonalData.bioInfo as bioInfo">
-  <div class="h" *ngIf="this.bioVisible">
+<div class="h" *ngIf="this.bioVisible">
+  <ng-container *ngIf="this.personalDataService.pesonalData.bioInfo as bioInfo">
     <div class="containerbio">
       <div class="cardImg" *ngIf="this.bioVisible">
         <div class="cardImg_picture">
           <img src="assets/imgProfile.jpg" alt="" />
         </div>
         <div class="cardImg_article">
-          <!-- <h1>Un Poco Sobre Mi</h1> -->
           <p>
             {{ bioInfo.biofirst }}
           </p>
@@ -31,5 +30,5 @@
     <div *ngIf="this.bioVisible" class="flex_center">
       <app-socialbutton-group></app-socialbutton-group>
     </div>
-  </div>
-</ng-container>
+  </ng-container>
+</div>

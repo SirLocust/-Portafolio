@@ -12,7 +12,6 @@ export class PersonaDataService {
       .get<PersonalData>('assets/data/data-portafolio.json')
       .subscribe((data: PersonalData) => {
         this.pesonalData = data;
-        console.log(this.pesonalData);
       });
   }
 }
