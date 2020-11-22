@@ -30,13 +30,18 @@
     <div
       class="sideBar__navBar__item1 flex_center_heigth"
       routerLink="/portafolio/realProyects"
+      routerLinkActive="sideBar__navBar__item-active"
     >
+      <fa-icon [icon]="this.faLaptoCode"></fa-icon>
+
       <p>Proyectos Reales</p>
     </div>
     <div
+      routerLinkActive="sideBar__navBar__item-active"
       routerLink="/portafolio/CourseAndExercise"
       class="sideBar__navBar__item2 flex_center_heigth"
     >
+      <fa-icon [icon]="this.faChalkboardTeacher"></fa-icon>
       <p>Cursos y Ejercicios</p>
     </div>
   </div>

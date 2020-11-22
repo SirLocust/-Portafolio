@@ -1,7 +1,8 @@
 import { UserGit } from './../../../core/models/user-git.model';
 import { GitServiceService } from './../../../core/git-service.service';
-import { Component, HostBinding, OnDestroy, OnInit } from '@angular/core';
-import { Subject, Subscription } from 'rxjs';
+import { faLaptopCode, faChalkboardTeacher} from '@fortawesome/free-solid-svg-icons'
+import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-side-bar',
@@ -11,6 +12,8 @@ import { Subject, Subscription } from 'rxjs';
 export class SideBarComponent implements OnInit, OnDestroy {
   user: UserGit;
   subscribeService: Subscription;
+  faLaptoCode = faLaptopCode;
+  faChalkboardTeacher = faChalkboardTeacher;
   constructor(private gitservice: GitServiceService) {}
 
   ngOnInit(): void {
@@ -22,6 +25,4 @@ export class SideBarComponent implements OnInit, OnDestroy {
   ngOnDestroy(): void {
     this.subscribeService.unsubscribe();
   }
-
-
 }

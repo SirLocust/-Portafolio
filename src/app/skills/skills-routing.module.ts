@@ -30,7 +30,7 @@ const routes: Routes = [
         path: 'others',
         component: OtherTiComponent,
       },
-      { path: '**', redirectTo: '/skills/javascript' , pathMatch:'full' },
+      { path: '**', redirectTo: '/skills/javascript' , pathMatch: 'full' },
     ],
 
   },
