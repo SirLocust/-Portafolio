@@ -8,12 +8,8 @@
     <app-cards
       *ngIf="this.personalDataService.pesonalData | async as personalData"
       [boxShadowColor]="'White'"
-      [urlImage1]="
-        'https://cdn.pixabay.com/photo/2013/07/12/12/14/euro-145386_960_720.png'
-      "
-      [urlImage2]="
-        'https://cdn.pixabay.com/photo/2013/07/12/12/14/euro-145386_960_720.png'
-      "
+      [urlImage1]="'assets/angular.png'"
+      [urlImage2]="'assets/javalogo.png'"
       [textoCard]="personalData.bioInfo.bioSecond"
     >
     </app-cards>
