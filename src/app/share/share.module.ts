@@ -28,7 +28,8 @@ import { SocialButtonComponent } from './components/social-button/social-button.
     SectionComponent,
     ButtonScrollToComponent,
     CardsComponent,
-    SocialbuttonGroupComponent
+    SocialbuttonGroupComponent,
+    FontAwesomeModule
   ],
 })
 export class ShareModule {}

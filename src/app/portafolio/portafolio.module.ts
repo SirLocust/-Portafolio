@@ -1,3 +1,4 @@
+import { ShareModule } from './../share/share.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -13,7 +14,8 @@ import { ExerciseCourseComponent } from './components/exercise-course/exercise-c
   declarations: [PortafolioBodyComponent, SideBarComponent, RealProyectsComponent, CardGitComponent, ExerciseCourseComponent],
   imports: [
     CommonModule,
-    PortafolioRoutingModule
+    PortafolioRoutingModule,
+    ShareModule
   ]
 })
 export class PortafolioModule { }

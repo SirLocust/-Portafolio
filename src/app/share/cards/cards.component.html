@@ -1,21 +1,14 @@
-
-
-
 <div appHoverD (isHover)="this.showImg = $event" class="container">
-    <picture  class="leftImg" *ngIf="this.showImg && this.urlImage2">
-        <img [src]="this.urlImage2" alt="">
-    </picture>
-    <div  [ngClass]="'boxShadow'+this.boxShadowColor" class="cardsInfo">
-        
-        <div class="cardsInfo__article">
-            
-            <h1>{{encabezadoCard}}</h1>
-            <p>{{textoCard}}</p>
-            
-        </div>
-        
+  <picture class="leftImg" *ngIf="this.showImg && this.urlImage2">
+    <img [src]="this.urlImage2" alt="" />
+  </picture>
+  <div [ngClass]="'boxShadow' + this.boxShadowColor" class="cardsInfo">
+    <div class="cardsInfo__article">
+      <h1>{{ encabezadoCard }}</h1>
+      <p>{{ textoCard }}</p>
     </div>
-    <picture  class="rightImg" *ngIf="this.showImg && this.urlImage1">
-        <img [src]="this.urlImage1" alt="">
-    </picture>
+  </div>
+  <picture class="rightImg" *ngIf="this.showImg && this.urlImage1">
+    <img [src]="this.urlImage1" alt="" />
+  </picture>
 </div>

@@ -16,9 +16,14 @@ const routes: Routes = [
       {
         path: 'CourseAndExercise',
         component: ExerciseCourseComponent
+      },
+      {
+        path: '**', pathMatch: 'full', redirectTo: '/portafolio/realProyects'
       }
     ]
-  }
+  },
+  { path: '**', pathMatch: 'full', redirectTo: '' },
+
 
 ];
 
