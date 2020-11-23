@@ -1,3 +1,4 @@
+import { StateAnimatioCv } from './../../models/StateAnimationCv.model';
 import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
 import {
   trigger,
@@ -33,8 +34,9 @@ import {
 export class SliderCvComponent implements OnInit {
   @Input() animationViewCv = 'off';
   @Input() viewCvElementPos: number;
-  @Input() animationViewCvList;
-  @Input() nameCv;
+  @Input() animationViewCvList: StateAnimatioCv[];
+  @Input() nameCv: string;
+  @Input() urlImgCv: string;
   @Output() animationViewCvEmitter = new EventEmitter<any>();
 
   constructor() {}

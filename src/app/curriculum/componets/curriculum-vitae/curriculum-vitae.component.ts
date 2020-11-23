@@ -1,3 +1,4 @@
+import { StateAnimatioCv } from './../../models/StateAnimationCv.model';
 import { Component, OnInit } from '@angular/core';
 import { trigger, state, style, transition, animate} from '@angular/animations'
 
@@ -8,19 +9,14 @@ import { trigger, state, style, transition, animate} from '@angular/animations'
   
 })
 export class CurriculumVitaeComponent implements OnInit {
-  isViewCvAnimationList = [
-    {
-      isViewCvAnimation : 'off'
-    } ,
+  isViewCvAnimationList: StateAnimatioCv[] = [
     {
       isViewCvAnimation : 'off'
     } ,
     {
       isViewCvAnimation : 'on'
-    } 
-    
-  ]
- 
+    } ,
+  ];
   constructor() { }
 
   ngOnInit(): void {

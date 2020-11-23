@@ -2,23 +2,23 @@
   [animationViewCv]="isViewCvAnimationList[0].isViewCvAnimation"
   [viewCvElementPos]="0"
   [nameCv]="'Junior Java Backend'"
-  [animationViewCvList]='this.isViewCvAnimationList'
+  [animationViewCvList]="this.isViewCvAnimationList"
   (animationViewCvEmitter)="this.isViewCvAnimationList = $event"
+  [urlImgCv]="'assets/CVBackendJunior.jpg'"
 ></app-slider-cv>
 <app-slider-cv
   [nameCv]="'Junior Angular Frontend'"
-
   [animationViewCv]="isViewCvAnimationList[1].isViewCvAnimation"
-  [animationViewCvList]='this.isViewCvAnimationList'
+  [animationViewCvList]="this.isViewCvAnimationList"
   [viewCvElementPos]="1"
+  [urlImgCv]="'assets/CV Frontend Junior.png'"
 ></app-slider-cv>
 
-<app-slider-cv
+<!-- <app-slider-cv
   [nameCv]="'Junior FullStack Angular-Java'"
   [animationViewCv]="isViewCvAnimationList[2].isViewCvAnimation"
-  [animationViewCvList]='this.isViewCvAnimationList'
+  [animationViewCvList]="this.isViewCvAnimationList"
   [viewCvElementPos]="2"
-></app-slider-cv>
+></app-slider-cv> -->
 
 <!-- <button (click)="toggleCv()">ssss</button> -->
-
