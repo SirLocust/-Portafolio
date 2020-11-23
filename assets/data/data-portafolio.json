@@ -1,35 +1,25 @@
 {
-  "bioInfo": 
-    {
-      "title" : [
-        "Junior",
-        "Developer"
-      ],
-      "biofirst" : " Junior Frontend developer en angular con 1 año de experiencia como freelance apasionado por angular y las aplicaciones web buscando una empresa para desarrollar mis habilidades en el mundo del frontend y aportar a esta mi conocimiento",
-      "bioSecond" : "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta eum est odio necessitatibus voluptatem magni molestiae fugit nisi ratione voluptas impedit laborum modi suscipit repudiandae facere, ex vel. Quisquam, quo.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta eum est odio necessitatibus voluptatem magni molestiae fugit nisi ratione voluptas impedit laborum modi suscipit repudiandae facere, ex vel. Quisquam, quoLorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta eum est odio necessitatibus voluptatem magni molestiae fugit nisi ratione voluptas impedit laborum modi suscipit repudiandae facere, ex vel. Quisquam, quo"
-    }
-    
-  ,
+  "bioInfo": {
+    "title": [
+      "JUNIOR",
+      "DEVELOPER"
+    ],
+    "biofirst": " Junior Frontend developer en angular con 1 año de experiencia como freelance apasionado por angular y las aplicaciones web buscando una empresa para desarrollar mis habilidades en el mundo del frontend y aportar a esta mi conocimiento",
+    "bioSecond": "Mis primeros pasos en la programación fue creando en el 2009 un sitio web de anime con dreamweaver y flash , no conocia bien html ni css, pero mi primo que estaba estudiando en la universidad me enseño un poco de esas dos tecnologias,  a punta de tablas y botones cree mi primer sitio web, en ese entonces veía muchas webs con php quise aprenderlo pero el miedo ala dificultad no me lo permitió. En el bachillerato curse una materia llamada diseño de software hay vimos un poco de visual basic , en esos años también vi cursos sobre java y python aprendí un poco de programación estructurada. Los siguientes años siempre seguí cerca la tecnología comense a ver cursos de node.js, docker etc, pero no me enganchaba en el desarrollo hasta que en el ano 2018 vi un curso de angular dictado en udemy por Fernando Herrera hay me enamore de la programación, conocia html y css muy basico entonces fue un aprender de todo luego de terminar el curso una persona me pidió que si le podía hacer una aplicación web similar ala de uber para un servicio así en su universidad para una materia de ella comense a realizarla y me di cuenta de que tenia muchos vacíos en la mayoría de cosas así que la termine y comense aprender mas en el 2019 comense el proyecto de crear una pagina web para un conjunto residencial utilice angular, boostrap 4 y firebase fue un proyecto largo donde aprendí mucho y pude practicar bastante con angular lo termine ahora me encuentro buscando mi primer trabajo como junior , estoy practicando cada dia mas con java y springboot para ser junior fullstack angular-java."
+  },
   "skillsInfo": {
+    "java": [
+      "programación basica, programación orientada a objetos(herencia, polimorfismo, encapsulacion, abstracción), colecciones, pruebas unitarias, tdd",
+      "He tomado muchos cursos de programación orientada a objetos realice una aplicación de consola de consultas médicas y un carrito de compras de un supermercado, Actualmente estoy mejorando mis conocimientos y habilidades del lenguaje."
+    ],
+    "angular": [
+      "directivas , rutas , servicios, rjxs, http.",
+      "He realizado varias aplicaciones como que consumen apis y se conectan a firebase, también realice durante un año un sitio web para un conjunto residencial con angular y firebase."
+    ],
+    "javascript": [
+      "programacio basica , manejo de objetos, ecmascript 6, promesas , fetch , DOM.",
 
-    "java" : [
-      "conceptos basicos de la programacion Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta eum est odio necessitatibus voluptatem magni molestiae fugit nisi ratione voluptas impedit laborum modi suscipit repudiandae facere, ex vel. Quisquam, quo",
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta eum est odio necessitatibus voluptatem magni molestiae fugit nisi ratione voluptas impedit laborum modi suscipit repudiandae facere, ex vel. Quisquam, quo"
-    ],
-    "angular" : [
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta eum est odio necessitatibus voluptatem magni molestiae fugit nisi ratione voluptas impedit laborum modi suscipit repudiandae facere, ex vel. Quisquam, quo",
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta eum est odio necessitatibus voluptatem magni molestiae fugit nisi ratione voluptas impedit laborum modi suscipit repudiandae facere, ex vel. Quisquam, quo"
-    ],
-    "javascript" : [
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta eum est odio necessitatibus voluptatem magni molestiae fugit nisi ratione voluptas impedit laborum modi suscipit repudiandae facere, ex vel. Quisquam, quo",
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta eum est odio necessitatibus voluptatem magni molestiae fugit nisi ratione voluptas impedit laborum modi suscipit repudiandae facere, ex vel. Quisquam, quo"
+      "He realizado un blackjack y un todo, he tomado varios cursos mas que todo lo he aplicado con angular el conocimiento del lenguaje."
     ]
   }
-    
-      
-
-
-  
-
-
 }
