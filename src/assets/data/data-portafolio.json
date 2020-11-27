@@ -4,22 +4,22 @@
       "JUNIOR",
       "DEVELOPER"
     ],
-    "biofirst": " Junior Frontend developer en angular con 1 año de experiencia como freelance apasionado por angular y las aplicaciones web buscando una empresa para desarrollar mis habilidades en el mundo del frontend y aportar a esta mi conocimiento",
-    "bioSecond": "Mis primeros pasos en la programación fue creando en el 2009 un sitio web de anime con dreamweaver y flash , no conocia bien html ni css, pero mi primo que estaba estudiando en la universidad me enseño un poco de esas dos tecnologias,  a punta de tablas y botones cree mi primer sitio web, en ese entonces veía muchas webs con php quise aprenderlo pero el miedo ala dificultad no me lo permitió. En el bachillerato curse una materia llamada diseño de software hay vimos un poco de visual basic , en esos años también vi cursos sobre java y python aprendí un poco de programación estructurada. Los siguientes años siempre seguí cerca la tecnología comense a ver cursos de node.js, docker etc, pero no me enganchaba en el desarrollo hasta que en el ano 2018 vi un curso de angular dictado en udemy por Fernando Herrera hay me enamore de la programación, conocia html y css muy basico entonces fue un aprender de todo luego de terminar el curso una persona me pidió que si le podía hacer una aplicación web similar ala de uber para un servicio así en su universidad para una materia de ella comense a realizarla y me di cuenta de que tenia muchos vacíos en la mayoría de cosas así que la termine y comense aprender mas en el 2019 comense el proyecto de crear una pagina web para un conjunto residencial utilice angular, boostrap 4 y firebase fue un proyecto largo donde aprendí mucho y pude practicar bastante con angular lo termine ahora me encuentro buscando mi primer trabajo como junior , estoy practicando cada dia mas con java y springboot para ser junior fullstack angular-java."
+    "biofirst": " Junior Frontend developer en angular con 1 año de experiencia como freelance apasionado por el desarrollo y las aplicaciones web,  interesado en desarrollar mis habilidades en una Compañía,  en el mundo del frontend y aportar a ella con  mi conocimiento",
+    "bioSecond": "Mis primeros pasos en la programación fueron creando en el 2009, un sitio web de anime con dreamweaver y flash, no conocía muy bien html ni css, pero mi primo que estaba estudiando en la universidad, me enseñó un poco de estas dos tecnologías,  a punta de tablas y botones cree mi primer sitio web, en ese entonces veía muchas webs con php y me propuse aprenderlo, pero en ese momento aún tenia temores y dificultades. En el bachillerato curse una materia llamada Diseño de Software, donde vimos un poco de visual basic, en esos años también vi cursos sobre java y python y  aprendí un poco de programación estructurada. Los siguientes años siempre seguí de cerca las tecnologías, comencé a ver cursos de node, js, docker, etc, pero no me inspiraba aún en el desarrollo tecnológico, hasta que en el ano 2018,  ví un curso de angular dictado en udemy por Fernando Herrera, en ese momento me dí cuenta de cuanto deseaba ser parte de la programación, conocia html y css muy básico,  entonces me propuse  aprender de todo. Luego de terminar el curso una persona me pidió que si le podía hacer una aplicación web similar a la de uber para un servicio así en su universidad y hay me di cuenta de que tenia muchos vacíos aún en algunas cosas,  así que la termine y comence a aprender más en el 2019. A partir de ese momento he tenido muchas oportunidades de crecer y elaborar algunos proyectos,  como crear algunas páginas web,  una para un Conjunto Residencial utilizando angular, boostrap 4 y firebase, este fue un proyecto largo donde aprendí mucho y pude prácticar bastante con angular. También cree una pagina web para una Fundacion llamada Reskate Juvenil.  Ahora me encuentro buscando mi primer trabajo como PROGRAMADOR JUNIOR, cada día practicando más con java y springboot,  para ser Junior Fullstack Angular-Java."
   },
   "skillsInfo": {
     "java": [
-      "programación basica, programación orientada a objetos(herencia, polimorfismo, encapsulacion, abstracción), colecciones, pruebas unitarias, tdd",
-      "He tomado muchos cursos de programación orientada a objetos realice una aplicación de consola de consultas médicas y un carrito de compras de un supermercado, Actualmente estoy mejorando mis conocimientos y habilidades del lenguaje."
+      "Programación Básica, Programación orientada a objetos (herencia, polimorfismo, encapsulacion, abstracción), Colecciones, Pruebas unitarias, tdd",
+      "He tomado muchos cursos de programación orientada a objetos. Realice una aplicación de consola de consultas médicas y un carrito de compras de un supermercado. Actualmente estoy mejorando mis conocimientos y habilidades del lenguaje."
     ],
     "angular": [
-      "directivas , rutas , servicios, rjxs, http.",
-      "He realizado varias aplicaciones como que consumen apis y se conectan a firebase, también realice durante un año un sitio web para un conjunto residencial con angular y firebase."
+      "Directivas , rutas , servicios, rjxs, http.",
+      "He realizado varias aplicaciones que consumen apis y se conectan a firebase, también realice durante un año un sitio web para un Conjunto Residencial con angular y firebase."
     ],
     "javascript": [
-      "programacio basica , manejo de objetos, ecmascript 6, promesas , fetch , DOM.",
+      "Programación Básica, manejo de objetos, ecmascript 6, promesas, fetch , DOM.",
 
-      "He realizado un blackjack y un todo, he tomado varios cursos mas que todo lo he aplicado con angular el conocimiento del lenguaje."
+      "He realizado un blackjack y un todo, he tomado varios cursos,  más que todo lo he aplicado con angular y con el conocimiento del lenguaje."
     ]
   }
 }
