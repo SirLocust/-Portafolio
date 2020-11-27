@@ -10,23 +10,24 @@ export class AppComponent implements OnInit {
   isLandscape = false;
   gitHubRepos = [];
 
-  constructor(private render2: Renderer2,
-              public personalDataService: PersonaDataService,
-              ) {}
+  constructor(
+    private render2: Renderer2,
+    public personalDataService: PersonaDataService
+  ) {
+    this.isLandScape();
+  }
 
   ngOnInit(): void {
-    this.isLandScape();
+    
     this.render2.listen('window', 'orientationchange', (event) => {
       this.isLandScape();
     });
-
-
   }
   isLandScape(): void {
     const screenOrientation: string = window.screen.orientation.type;
 
     const isLandScapeAnyType: boolean =
-          screenOrientation === 'landscape-primary'
+      screenOrientation === 'landscape-primary'
         ? true
         : screenOrientation === 'landscape'
         ? true
